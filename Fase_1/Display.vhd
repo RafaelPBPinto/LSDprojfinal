@@ -4,9 +4,12 @@ use ieee.numeric_std.all;
 
 entity display is
 	port (clk 			 	: in std_logic;
+			enable_ola		: out std_logic;
+			--enable_epro		: in  std_logic;
 			visorunidades	: out std_logic_vector(6 downto 0);
 			visordezenas	: out std_logic_vector(6 downto 0);
-			visorcentenas	: out std_logic_vector(6 downto 0));
+			visorcentenas	: out std_logic_vector(6 downto 0);
+			visormilhares	: out std_logic_vector(6 downto 0));
 			
 end display;
 
@@ -24,7 +27,8 @@ constant LetraR	: std_logic_vector(6 downto 0) := "1110111";
 begin 
 	process(clk)
 	begin
-		if(rising_edge(clk)) then 
+		if(rising_edge(clk)) then
+			enable_ola		<= '1';
 			visorunidades	<= LetraA;
 			visordezenas	<= LetraL;
 			visorcentenas	<= LetraO;

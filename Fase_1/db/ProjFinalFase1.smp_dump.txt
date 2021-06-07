@@ -1,0 +1,7 @@
+
+State Machine - |Fase1|Fase1FSM:u3|s_state
+Name s_state.E3 s_state.E2 s_state.E1 s_state.E0 
+s_state.E0 0 0 0 0 
+s_state.E1 0 0 1 1 
+s_state.E2 0 1 0 1 
+s_state.E3 1 0 0 1 
