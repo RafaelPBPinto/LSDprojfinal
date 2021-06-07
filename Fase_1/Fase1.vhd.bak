@@ -1,0 +1,13 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Fase1 is
+	port (Bebida1 	: in std_logic;
+			Bebida2 	: in std_logic;
+			Bebida3 	: in std_logic;
+			prodprep	: out std_logic;
+			proddesp : out std_logic;
+			display  : out std_logic_vector(6 downto 0));
+
+end Fase1;
