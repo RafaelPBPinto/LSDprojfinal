@@ -24,6 +24,16 @@ constant LetraE 	: std_logic_vector(6 downto 0) := "1111001";
 constant LetraP	: std_logic_vector(6 downto 0) := "1110001";
 constant LetraR	: std_logic_vector(6 downto 0) := "1110111";
 
+--Letras da palavra "COCA"
+constant LetraC	: std_logic_vector(6 downto 0) := "0111001";
+
+--Letras da palavra "AGUA"
+constant LetraG	: std_logic_vector(6 downto 0) := "1111101";
+constant LetraU	: std_logic_vector(6 downto 0) := "0111110";
+
+--Letras da palavra "SLAR"
+constant LetraS	: std_logic_vector(6 downto 0) := "1101101";
+
 begin 
 	process(clk)
 	begin
