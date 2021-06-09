@@ -10,6 +10,9 @@ entity Fase1FSM is
 			timeExp			: in std_logic;
 			ola				: out std_logic;
 			epro				: out std_logic;
+			coca				: out std_logic;
+			agua				: out std_logic;
+			slar				: out std_logic;
 			B1	 				: in std_logic;
 			B2	 				: in std_logic;
 			B3	 				: in std_logic;
@@ -19,8 +22,8 @@ entity Fase1FSM is
 end Fase1FSM;
 
 architecture v1 of Fase1FSM is
-	constant OLA_TIME	: std_logic_vector(7 downto 0) := "00000100"; -- 4 segundos
-	constant LEDR_TIME: std_logic_vector(7 downto 0) := "00000110"; -- 6 segundos
+	constant OLA_TIME		: std_logic_vector(7 downto 0) := "00000100"; -- 4 segundos
+	constant LEDR_TIME	: std_logic_vector(7 downto 0) := "00000110"; -- 6 segundos
 	
 	type TState is (E0, E1, E2, E3);
 	signal s_state : TState;
@@ -41,7 +44,9 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '1';
 					timeVal			<= OLA_TIME;
-					s_state  		<= E1;
+					if(timeExp = '1') then
+						s_state  		<= E1;
+					end if;
 				
 				when E1 =>
 					ola				<= '0';
@@ -50,7 +55,7 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '0';
 					timeVal			<= (others => '-');
-					if(B1 = '1' or B2 = '1' or B3 = '1') then 
+					if((B1 = '1') or (B2 = '1') or (B3 = '1')) then 
 						s_state <= E2;
 					else
 						s_state <= E1;
@@ -63,7 +68,9 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '1';
 					timeVal			<= LEDR_TIME;
-					s_state <= E3;
+					if(timeExp = '1') then
+						s_state <= E3;
+					end if;
 				
 				when E3 =>
 					ola				<= '0';
@@ -72,7 +79,7 @@ begin
 					ledg				<= '1';
 					enable_timer	<= '0';
 					timeVal			<= (others => '-');
-					if(B1 = '0' and B2 = '0' and B3 ='0') then
+					if((B1 = '0') and (B2 = '0') and (B3 ='0')) then
 						s_state <= E1;
 					else
 						s_state <= E3;
