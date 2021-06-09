@@ -21,7 +21,7 @@ architecture shell of Fase1 is
 	signal s_timeExp	: std_logic;
 	signal s_timeVal	: std_logic_vector(7 downto 0);
 	signal s_ola		: std_logic;
-	--signal s_epro		: std_logic;
+	signal s_epro		: std_logic;
 	
 begin
 
@@ -30,12 +30,18 @@ u0:	entity work.FreqDivider(v1)
 						k			=>	X"004C4B40",
 						clkOut	=> s_clk10hz);	
 
-u1:	entity work.OlaIntermit(v1)
-			port map(pisca			=> s_clk10hz,
-						enable		=> s_ola,
-						visor_uni	=>	HEX0,
+u1:	entity work.Display(v1)
+			port map(clk			=> CLOCK_50,
+						pisca			=> s_clk10hz,
+						en_ola		=> s_ola,
+						en_epro		=> s_epro,
+						en_coca		=> SW(17),
+						en_agua		=> SW(16),
+						en_slar		=> SW(15),
+						visor_uni	=> HEX0,
 						visor_dez	=> HEX1,
-						visor_cen	=> HEX2);
+						visor_cen	=> HEX2,
+						visor_mil	=> HEX3);
 						
 u2:	entity work.TimerFSM(Behavioral)
 			port map(reset		=> not KEY(0),
@@ -51,12 +57,12 @@ u3:	entity work.Fase1FSM(v1)
 						timeVal			=>	s_timeVal,
 						timeExp			=>	s_timeExp,
 						ola				=> s_ola,
-						--epro				=> s_epro,
+						epro				=> s_epro,
 						B1					=> SW(17),
 						B2					=> SW(16),
 						B3					=> SW(15),
 						ledr				=> LEDR(0),
-						ledg				=>	LEDG(7));						
-						
+						ledg				=>	LEDG(7));
+												
 end shell;
 

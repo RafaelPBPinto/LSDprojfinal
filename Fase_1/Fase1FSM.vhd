@@ -10,10 +10,7 @@ entity Fase1FSM is
 			timeExp			: in std_logic;
 			ola				: out std_logic;
 			epro				: out std_logic;
-			coca				: out std_logic;
-			agua				: out std_logic;
-			slar				: out std_logic;
-			B1	 				: in std_logic;
+			B1		 			: in std_logic;
 			B2	 				: in std_logic;
 			B3	 				: in std_logic;
 			ledr				: out std_logic;
