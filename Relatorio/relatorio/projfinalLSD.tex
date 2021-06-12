@@ -77,11 +77,6 @@
 
 \pagenumbering{roman}
 
-%%%%%% RESUMO %%%%%%
-\begin{abstract}
-Este relatório tem como objetivo explicar o funcionamento da máquina automática de oferta de produtos desenvolvida no nosso projeto. Para que a máquina funcionasse foi necessário a implementação de código em \ac{vhdl} e procedeu-se vários testes e à análise dos mesmos. 
-\end{abstract}
-
 \tableofcontents
 % \listoftables     % descomentar se necessário
 % \listoffigures    % descomentar se necessário
@@ -97,37 +92,28 @@ Este relatório tem como objetivo explicar o funcionamento da máquina automáti
 
 \ac{vhdl} é uma linguagem usada para modelar o comportamento e a estrutura de sistemas digitais em, por exemplo, \ac{fpga}. De forma muito resumida, \ac{fpga} é uma matriz de blocos lógicos interligados de modo inteligente que podem ser reprogramados para a aplicação desejada.
 
-\chapter{Metodologia}
-\label{chap.metodologia}
-Descreve os métodos utilizados para obtenção de resultados.
+Este relatório tem como objetivo explicar o funcionamento da máquina automática de oferta de produtos desenvolvida no nosso projeto. Para que a máquina funcionasse foi necessário a implementação de código em \ac{vhdl} e procedeu-se a vários testes na \ac{fpga} e à análise dos mesmos.
 
-Neste esqueleto de relatório aproveitamos este capítulo para exemplificar
-como se usam alguns elementos de {\LaTeX}.
+A máquina disponibiliza 3 bebidas diferentes das quais podemos selecionar uma através de \textit{switches}. Após a disponibilização da bebida o utilizador pode ainda entrar no modo "Modo Escolha tamanho das garrafas", onde pode escolher o tamanho da garrafa, 25cl, 33cl, 50cl ou 10dl. Por defeito está configurado para 33cl. A máquina tem ainda um RESET global que coloca a máquina no estado inicial.
+ 
+\chapter{Arquitetura}
+\label{chap.arquitetura}
+descrição da estrutura conceptual do sistema com pelo menos uma figura ilustrativa
 
 \section{Exemplos}
 
-\subsection{Utilização de acrónimos}
-\label{sec.util}
-Esta é a primeira invocação do acrónimo \ac{ua}.
-E esta é a segunda: \ac{ua}.
+\subsection{Implementação}
+\label{sec.implementação}
+incluindo representação gráfica das máquinas de estado finitos
+implementadas – se aplicável, aspetos de implementação mais relevantes e ligação a
+periféricos do kit
 
+\chapter{Validação}
+\label{chap.validação}
+simulação dos principais módulos
 
-Outras duas referências a \ac{miect}
-e \ac{miect}.
+\chapter{Manual do utilizador}
 
-\subsection{Referências bibliográficas}
-Informação relativa à estrutura formal de um relatório pode ser obtida
-na página do \ac{glisc}\cite{glisc}.
-
-Como foi apresentado na \autoref{sec.util}...
-
-\chapter{Resultados}
-\label{chap.resultados}
-Descreve os resultados obtidos.
-
-\chapter{Análise}
-\label{chap.analise}
-Analisa os resultados.
 
 \chapter{Conclusões}
 \label{chap.conclusao}
