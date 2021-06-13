@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Sel_Tam_Garrafa_FSM is
+	port (clk	: in std_logic;
+			sel	: in std_logic;
+			b33cl	: out std_logic;
+			b25cl	: out std_logic;
+			b50cl	: out std_logic;
+			b10dl	: out std_logic);
+end Sel_Tam_Garrafa_FSM;
+
+architecture v1 of Sel_Tam_Garrafa_FSM is
+begin
+	process(clk)
+	begin
+		if(rising_edge
+	end process;
+
+end v1;
