@@ -6,13 +6,13 @@ entity TimerFSM is
 	port(reset		: in  std_logic;
 		  clk			: in  std_logic;
 		  enable		: in  std_logic;
-		  timeVal	: in  std_logic_vector(7 downto 0);
+		  timeVal	: in  std_logic_vector(29 downto 0);
 		  timeExp	: out std_logic);
 end TimerFSM;
 
 architecture Behavioral of TimerFSM is
 
-	signal s_counter : unsigned(7 downto 0) := (others => '1');
+	signal s_counter : unsigned(29 downto 0) := (others => '1');
 	signal s_cntZero : std_logic := '0';
 
 begin
@@ -26,7 +26,7 @@ begin
 				s_counter <= unsigned(timeVal) - 1;
 				s_cntZero <= '0';
 			else
-				if (s_counter = "00000000") then
+				if (s_counter = "000000000000000000000000000000") then
 					s_cntZero <= '1';
 				else
 					s_counter <= s_counter  - 1;

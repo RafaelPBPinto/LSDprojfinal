@@ -20,7 +20,7 @@ architecture shell of Fase1 is
 	signal s_clk10hz  : std_logic;
 	signal s_enable	: std_logic;
 	signal s_timeExp	: std_logic;
-	signal s_timeVal	: std_logic_vector(7 downto 0);
+	signal s_timeVal	: std_logic_vector(29 downto 0);
 	signal s_ola		: std_logic;
 	signal s_epro		: std_logic;
 
