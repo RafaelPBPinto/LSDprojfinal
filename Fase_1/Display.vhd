@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 
 entity Display is
 	port (clk			: in std_logic;
-			pisca			: in std_logic;
+			en_pisca		: in std_logic;
 			en_ola		: in std_logic;
 			en_epro		: in std_logic;
 			en_coca		: in std_logic;
@@ -36,17 +36,16 @@ constant letraU	: std_logic_vector(6 downto 0) := "1000001";
 -- letras da palavra "SLAR"
 constant letraS	: std_logic_vector(6 downto 0) := "0010010";
 
-signal mask 	: std_logic_vector(6 downto 0);
+signal s_pisca 	: std_logic;
 
 begin
 	process(clk)
 	begin
 		if(rising_edge(clk)) then
-			if(en_ola = '1') then
-				mask <= (others => pisca); --7 bits intermitentes
-				visor_uni <= (letraA or mask);
-				visor_dez <= (letraL or mask);
-				visor_cen <= (letraO or mask);
+			if((en_ola = '1')) then
+				visor_uni <= letraA;
+				visor_dez <= letraL;
+				visor_cen <= letraO;
 				visor_mil <= (others => '1');
 			elsif(en_epro = '1') then
 				visor_uni <= letraO; 

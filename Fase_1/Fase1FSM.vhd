@@ -5,7 +5,6 @@ use ieee.numeric_std.all;
 entity Fase1FSM is
 	port (reset				: in std_logic;
 			clk				: in std_logic;
-			--en_clk10hz		: in std_logic;
 			enable_timer	: out std_logic;
 			timeVal			: out std_logic_vector(29 downto 0);
 			timeExp			: in std_logic;

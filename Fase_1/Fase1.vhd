@@ -33,7 +33,7 @@ u0:	entity work.ClkDividerN(RTL)
 
 u1:	entity work.Display(v1)
 			port map(clk			=> CLOCK_50,
-						pisca			=> s_clk10hz,
+						en_pisca		=> not s_clk10hz,
 						en_ola		=> s_ola,
 						en_epro		=> s_epro,
 						en_coca		=> SW(17),
