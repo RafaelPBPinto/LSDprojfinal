@@ -8,6 +8,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDG[2]",
+					"strict" : false
+				},
+				{
 					"name" : "LEDG[7]",
 					"strict" : false
 				},
@@ -132,11 +144,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[17]",
+					"name" : "SW[15]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[15]",
+					"name" : "SW[17]",
 					"strict" : false
 				},
 				{

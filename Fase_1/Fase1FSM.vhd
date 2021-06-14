@@ -6,7 +6,7 @@ entity Fase1FSM is
 	port (reset				: in std_logic;
 			clk				: in std_logic;
 			enable_timer	: out std_logic;
-			timeVal			: out std_logic_vector(29 downto 0);
+			timeVal			: out std_logic_vector(7 downto 0);
 			timeExp			: in std_logic;
 			ola				: out std_logic;
 			epro				: out std_logic;
@@ -14,15 +14,16 @@ entity Fase1FSM is
 			agua				: in std_logic;
 			slar				: in std_logic;
 			ledr				: out std_logic;
-			ledg 				: out std_logic);
+			ledg 				: out std_logic;
+			debug				: out std_logic_vector(3 downto 0));
 
 end Fase1FSM;
 
 architecture v1 of Fase1FSM is
-	constant OLA_TIME		: std_logic_vector(29 downto 0) := "001011111010111100001000000000"; -- 4 segundos
-	constant LEDR_TIME	: std_logic_vector(29 downto 0) := "010001111000011010001100000000"; -- 6 segundos
+	constant OLA_TIME		: std_logic_vector(7 downto 0) := X"04"; -- 4 segundos
+	constant LEDR_TIME	: std_logic_vector(7 downto 0) := x"06"; -- 6 segundos
 	
-	type TState is (E0, E0A, E1, E2, E2A, E3);
+	type TState is (E0, E0A, E1, E2, E2A, E2B, E3);
 	signal s_state : TState;
 
 begin
@@ -68,8 +69,11 @@ begin
 					timeVal			<= LEDR_TIME;
 					s_state			<= E2A;
 					
-				when E2A	=>
+				when E2A =>
+					s_state <= E2B;
 					enable_timer <= '0';
+						
+				when E2B	=>
 					if(timeExp = '1') then
 						s_state <= E3;
 					end if;
@@ -88,5 +92,14 @@ begin
 			end if;
 		end if;
 	end process;
+	
+	debug <= "0000" when s_state = E0 else
+				"0001" when s_state = E0A else
+				"0010" when s_state = E1 else 
+				"0011" when s_state = E2 else 
+				"0100" when s_state = E2A else 
+				"0101" when s_state = E2B else 
+				"0111" when s_state = E3 else
+				"1111";  
 	
 end v1;

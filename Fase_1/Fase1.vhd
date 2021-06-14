@@ -7,7 +7,7 @@ entity Fase1 is
 			SW			: in std_logic_vector(17 downto 0);
 			KEY		: in std_logic_vector(3 downto 0);
 			LEDR		: out std_logic_vector(17 downto 0);
-			LEDG		: out std_logic_vector(7 downto 0);
+			LEDG		: out std_logic_vector(8 downto 0);
 			HEX0		: out std_logic_vector(6 downto 0);
 			HEX1		: out std_logic_vector(6 downto 0);
 			HEX2		: out std_logic_vector(6 downto 0);
@@ -20,10 +20,10 @@ architecture shell of Fase1 is
 	signal s_clk10hz  : std_logic;
 	signal s_enable	: std_logic;
 	signal s_timeExp	: std_logic;
-	signal s_timeVal	: std_logic_vector(29 downto 0);
+	signal s_timeVal	: std_logic_vector(7 downto 0);
 	signal s_ola		: std_logic;
 	signal s_epro		: std_logic;
-
+	signal s_sw			: std_logic_vector(17 downto 0);
 begin
 
 u0:	entity work.ClkDividerN(RTL)
@@ -36,9 +36,9 @@ u1:	entity work.Display(v1)
 						clk10hz		=> s_clk10hz,
 						en_ola		=> s_ola,
 						en_epro		=> s_epro,
-						en_coca		=> SW(17),
-						en_agua		=> SW(16),
-						en_slar		=> SW(15),
+						en_coca		=> s_SW(17),
+						en_agua		=> s_SW(16),
+						en_slar		=> s_SW(15),
 						visor_uni	=> HEX0,
 						visor_dez	=> HEX1,
 						visor_cen	=> HEX2,
@@ -59,11 +59,19 @@ u3:	entity work.Fase1FSM(v1)
 						timeExp			=>	s_timeExp,
 						ola				=> s_ola,
 						epro				=> s_epro,
-						coca				=> SW(17),
-						agua				=> SW(16),
-						slar				=> SW(15),
+						coca				=> s_SW(17),
+						agua				=> s_SW(16),
+						slar				=> s_SW(15),
 						ledr				=> LEDR(0),
-						ledg				=>	LEDG(7));
+						ledg				=>	LEDG(7),
+						debug				=> LEDG(3 downto 0));
+						
+		process(CLOCK_50)
+		begin
+			if(rising_edge(CLOCK_50)) then
+				s_sw <= SW;
+			end if;
+		end process;
 								
 end shell;
 

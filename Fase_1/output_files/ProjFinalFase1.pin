@@ -444,7 +444,7 @@ GND                          : F13       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 8         :                
 LEDR[14]                     : F15       : output : 2.5 V             :         : 7         : Y              
 GND                          : F16       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 7         :                
+LEDG[8]                      : F17       : output : 2.5 V             :         : 7         : Y              
 LEDR[4]                      : F18       : output : 2.5 V             :         : 7         : Y              
 LEDR[1]                      : F19       : output : 2.5 V             :         : 7         : Y              
 GND                          : F20       : gnd    :                   :         :           :                
