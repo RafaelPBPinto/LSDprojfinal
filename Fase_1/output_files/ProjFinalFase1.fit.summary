@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jun 14 15:17:56 2021
+Fitter Status : Successful - Mon Jun 14 15:57:20 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : ProjFinalFase1
 Top-level Entity Name : Fase1
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 173 / 114,480 ( < 1 % )
-    Total combinational functions : 161 / 114,480 ( < 1 % )
+Total logic elements : 174 / 114,480 ( < 1 % )
+    Total combinational functions : 163 / 114,480 ( < 1 % )
     Dedicated logic registers : 104 / 114,480 ( < 1 % )
 Total registers : 104
 Total pins : 77 / 529 ( 15 % )

@@ -27,13 +27,13 @@ architecture shell of Fase1 is
 begin
 
 u0:	entity work.ClkDividerN(RTL)
-			generic map(divFactor => 500000)
+			generic map(divFactor => 5000000)
 			port map(clkIn			 => CLOCK_50,
 						clkOut		 => s_clk10hz);	
 
 u1:	entity work.Display(v1)
 			port map(clk			=> CLOCK_50,
-						en_pisca		=> not s_clk10hz,
+						clk10hz		=> s_clk10hz,
 						en_ola		=> s_ola,
 						en_epro		=> s_epro,
 						en_coca		=> SW(17),
