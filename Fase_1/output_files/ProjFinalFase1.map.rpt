@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjFinalFase1
-Sun Jun 13 14:24:04 2021
+Mon Jun 14 12:40:14 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  10. General Register Statistics
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "FreqDivider:u0"
+ 13. Parameter Settings for User Entity Instance: ClkDividerN:u0
  14. Post-Synthesis Netlist Statistics for Top Partition
  15. Elapsed Time Per Partition
  16. Analysis & Synthesis Messages
@@ -47,15 +47,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 13 14:24:04 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Jun 14 12:40:14 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ProjFinalFase1                              ;
 ; Top-level Entity Name              ; Fase1                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 109                                         ;
-;     Total combinational functions  ; 102                                         ;
-;     Dedicated logic registers      ; 70                                          ;
-; Total registers                    ; 70                                          ;
+; Total logic elements               ; 105                                         ;
+;     Total combinational functions  ; 98                                          ;
+;     Dedicated logic registers      ; 69                                          ;
+; Total registers                    ; 69                                          ;
 ; Total pins                         ; 77                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -173,10 +173,10 @@ refer to the applicable agreement for further details.
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                         ; Library ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 ; Fase1.vhd                        ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd       ;         ;
-; FreqDivider.vhd                  ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/FreqDivider.vhd ;         ;
 ; Fase1FSM.vhd                     ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd    ;         ;
 ; TimerFSM.vhd                     ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/TimerFSM.vhd    ;         ;
 ; Display.vhd                      ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Display.vhd     ;         ;
+; ClkDividerN.vhd                  ; yes             ; User VHDL File  ; C:/LSD/ProjFinal/LSDprojfinal/Fase_1/ClkDividerN.vhd ;         ;
 +----------------------------------+-----------------+-----------------+------------------------------------------------------+---------+
 
 
@@ -185,20 +185,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 109            ;
+; Estimated Total logic elements              ; 105            ;
 ;                                             ;                ;
-; Total combinational functions               ; 102            ;
+; Total combinational functions               ; 98             ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 34             ;
-;     -- 3 input functions                    ; 21             ;
-;     -- <=2 input functions                  ; 47             ;
+;     -- 4 input functions                    ; 30             ;
+;     -- 3 input functions                    ; 18             ;
+;     -- <=2 input functions                  ; 50             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 64             ;
-;     -- arithmetic mode                      ; 38             ;
+;     -- normal mode                          ; 61             ;
+;     -- arithmetic mode                      ; 37             ;
 ;                                             ;                ;
-; Total registers                             ; 70             ;
-;     -- Dedicated logic registers            ; 70             ;
+; Total registers                             ; 69             ;
+;     -- Dedicated logic registers            ; 69             ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 77             ;
@@ -206,9 +206,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 70             ;
-; Total fan-out                               ; 576            ;
-; Average fan-out                             ; 1.77           ;
+; Maximum fan-out                             ; 69             ;
+; Total fan-out                               ; 523            ;
+; Average fan-out                             ; 1.63           ;
 +---------------------------------------------+----------------+
 
 
@@ -217,10 +217,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
-; |Fase1                     ; 102 (0)             ; 70 (0)                    ; 0           ; 0            ; 0       ; 0         ; 77   ; 0            ; |Fase1                ; Fase1       ; work         ;
+; |Fase1                     ; 98 (0)              ; 69 (0)                    ; 0           ; 0            ; 0       ; 0         ; 77   ; 0            ; |Fase1                ; Fase1       ; work         ;
+;    |ClkDividerN:u0|        ; 52 (52)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|ClkDividerN:u0 ; ClkDividerN ; work         ;
 ;    |Display:u1|            ; 18 (18)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|Display:u1     ; Display     ; work         ;
 ;    |Fase1FSM:u3|           ; 8 (8)               ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|Fase1FSM:u3    ; Fase1FSM    ; work         ;
-;    |FreqDivider:u0|        ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|FreqDivider:u0 ; FreqDivider ; work         ;
 ;    |TimerFSM:u2|           ; 20 (20)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|TimerFSM:u2    ; TimerFSM    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -261,8 +261,8 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 70    ;
-; Number of registers using Synchronous Clear  ; 36    ;
+; Total registers                              ; 69    ;
+; Number of registers using Synchronous Clear  ; 4     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -298,25 +298,14 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
 
 
-+---------------------------------------------+
-; Port Connectivity Checks: "FreqDivider:u0"  ;
-+-----------+-------+----------+--------------+
-; Port      ; Type  ; Severity ; Details      ;
-+-----------+-------+----------+--------------+
-; k[19..18] ; Input ; Info     ; Stuck at VCC ;
-; k[9..8]   ; Input ; Info     ; Stuck at VCC ;
-; k[31..23] ; Input ; Info     ; Stuck at GND ;
-; k[21..20] ; Input ; Info     ; Stuck at GND ;
-; k[17..15] ; Input ; Info     ; Stuck at GND ;
-; k[13..12] ; Input ; Info     ; Stuck at GND ;
-; k[5..0]   ; Input ; Info     ; Stuck at GND ;
-; k[22]     ; Input ; Info     ; Stuck at VCC ;
-; k[14]     ; Input ; Info     ; Stuck at VCC ;
-; k[11]     ; Input ; Info     ; Stuck at VCC ;
-; k[10]     ; Input ; Info     ; Stuck at GND ;
-; k[7]      ; Input ; Info     ; Stuck at GND ;
-; k[6]      ; Input ; Info     ; Stuck at VCC ;
-+-----------+-------+----------+--------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ClkDividerN:u0 ;
++----------------+--------+-----------------------------------+
+; Parameter Name ; Value  ; Type                              ;
++----------------+--------+-----------------------------------+
+; divfactor      ; 500000 ; Signed Integer                    ;
++----------------+--------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -325,22 +314,22 @@ Encoding Type:  One-Hot
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 77                          ;
-; cycloneiii_ff         ; 70                          ;
+; cycloneiii_ff         ; 69                          ;
 ;     ENA               ; 14                          ;
-;     SCLR              ; 36                          ;
-;     plain             ; 20                          ;
-; cycloneiii_lcell_comb ; 104                         ;
-;     arith             ; 38                          ;
-;         2 data inputs ; 38                          ;
-;     normal            ; 66                          ;
+;     SCLR              ; 4                           ;
+;     plain             ; 51                          ;
+; cycloneiii_lcell_comb ; 100                         ;
+;     arith             ; 37                          ;
+;         2 data inputs ; 37                          ;
+;     normal            ; 63                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 21                          ;
-;         4 data inputs ; 34                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 18                          ;
+;         4 data inputs ; 30                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.89                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -359,16 +348,13 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Jun 13 14:23:45 2021
+    Info: Processing started: Mon Jun 14 12:40:03 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file fase1.vhd
     Info (12022): Found design unit 1: Fase1-shell File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 18
     Info (12023): Found entity 1: Fase1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file freqdivider.vhd
-    Info (12022): Found design unit 1: FreqDivider-v1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/FreqDivider.vhd Line: 12
-    Info (12023): Found entity 1: FreqDivider File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/FreqDivider.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fase1fsm.vhd
     Info (12022): Found design unit 1: Fase1FSM-v1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd Line: 21
     Info (12023): Found entity 1: Fase1FSM File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd Line: 5
@@ -378,13 +364,16 @@ Info (12021): Found 2 design units, including 1 entities, in source file timerfs
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
     Info (12022): Found design unit 1: Display-v1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Display.vhd Line: 18
     Info (12023): Found entity 1: Display File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Display.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file clkdividern.vhd
+    Info (12022): Found design unit 1: ClkDividerN-RTL File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/ClkDividerN.vhd Line: 11
+    Info (12023): Found entity 1: ClkDividerN File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/ClkDividerN.vhd Line: 5
 Info (12127): Elaborating entity "Fase1" for the top level hierarchy
 Warning (10873): Using initial value X (don't care) for net "LEDR[17..1]" at Fase1.vhd(9) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
 Warning (10873): Using initial value X (don't care) for net "LEDG[6..0]" at Fase1.vhd(10) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
-Info (12129): Elaborating entity "FreqDivider" using architecture "A:v1" for hierarchy "FreqDivider:u0" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 28
-Info (12129): Elaborating entity "Display" using architecture "A:v1" for hierarchy "Display:u1" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 33
-Info (12129): Elaborating entity "TimerFSM" using architecture "A:behavioral" for hierarchy "TimerFSM:u2" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 46
-Info (12129): Elaborating entity "Fase1FSM" using architecture "A:v1" for hierarchy "Fase1FSM:u3" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 53
+Info (12129): Elaborating entity "ClkDividerN" using architecture "A:rtl" for hierarchy "ClkDividerN:u0" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 29
+Info (12129): Elaborating entity "Display" using architecture "A:v1" for hierarchy "Display:u1" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 34
+Info (12129): Elaborating entity "TimerFSM" using architecture "A:behavioral" for hierarchy "TimerFSM:u2" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 47
+Info (12129): Elaborating entity "Fase1FSM" using architecture "A:v1" for hierarchy "Fase1FSM:u3" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 54
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
     Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
@@ -443,14 +432,14 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
-Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 186 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 54 output pins
-    Info (21061): Implemented 113 logic cells
+    Info (21061): Implemented 109 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Sun Jun 13 14:24:04 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Mon Jun 14 12:40:14 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

@@ -10,9 +10,9 @@ entity Fase1FSM is
 			timeExp			: in std_logic;
 			ola				: out std_logic;
 			epro				: out std_logic;
-			B1		 			: in std_logic;
-			B2	 				: in std_logic;
-			B3	 				: in std_logic;
+			coca	 			: in std_logic;
+			agua				: in std_logic;
+			slar				: in std_logic;
 			ledr				: out std_logic;
 			ledg 				: out std_logic);
 
@@ -52,7 +52,7 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '0';
 					timeVal			<= (others => '-');
-					if((B1 = '1') or (B2 = '1') or (B3 = '1')) then 
+					if((coca = '1') or (agua = '1') or (slar = '1')) then 
 						s_state <= E2;
 					else
 						s_state <= E1;
@@ -76,7 +76,7 @@ begin
 					ledg				<= '1';
 					enable_timer	<= '0';
 					timeVal			<= (others => '-');
-					if((B1 = '0') and (B2 = '0') and (B3 ='0')) then
+					if((coca = '0') and (agua = '0') and (slar ='0')) then
 						s_state <= E1;
 					else
 						s_state <= E3;

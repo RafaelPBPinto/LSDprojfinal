@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity Fase1 is
-	port (CLOCK_50 : in std_logic;
+	port (CLOCK_50	: in std_logic;
 			SW			: in std_logic_vector(17 downto 0);
 			KEY		: in std_logic_vector(3 downto 0);
 			LEDR		: out std_logic_vector(17 downto 0);
@@ -16,19 +16,20 @@ entity Fase1 is
 end Fase1;
 
 architecture shell of Fase1 is
+
 	signal s_clk10hz  : std_logic;
 	signal s_enable	: std_logic;
 	signal s_timeExp	: std_logic;
 	signal s_timeVal	: std_logic_vector(7 downto 0);
 	signal s_ola		: std_logic;
 	signal s_epro		: std_logic;
-	
+
 begin
 
-u0:	entity work.FreqDivider(v1)
-			port map(clkIn		=> CLOCK_50,
-						k			=>	X"004C4B40",
-						clkOut	=> s_clk10hz);	
+u0:	entity work.ClkDividerN(RTL)
+			generic map(divFactor => 500000)
+			port map(clkIn			 => CLOCK_50,
+						clkOut		 => s_clk10hz);	
 
 u1:	entity work.Display(v1)
 			port map(clk			=> CLOCK_50,
@@ -58,11 +59,11 @@ u3:	entity work.Fase1FSM(v1)
 						timeExp			=>	s_timeExp,
 						ola				=> s_ola,
 						epro				=> s_epro,
-						B1					=> SW(17),
-						B2					=> SW(16),
-						B3					=> SW(15),
+						coca				=> SW(17),
+						agua				=> SW(16),
+						slar				=> SW(15),
 						ledr				=> LEDR(0),
 						ledg				=>	LEDG(7));
-												
+								
 end shell;
 
