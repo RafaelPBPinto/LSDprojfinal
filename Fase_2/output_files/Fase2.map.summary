@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Jun 13 15:37:15 2021
+Analysis & Synthesis Status : Successful - Wed Jun 16 10:36:04 2021
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : Fase2
 Top-level Entity Name : Fase2
 Family : Cyclone IV E
-Total logic elements : 208
-    Total combinational functions : 194
-    Dedicated logic registers : 119
-Total registers : 119
+Total logic elements : 283
+    Total combinational functions : 256
+    Dedicated logic registers : 160
+Total registers : 160
 Total pins : 105
 Total virtual pins : 0
 Total memory bits : 0

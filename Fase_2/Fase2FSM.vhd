@@ -23,7 +23,7 @@ architecture v1 of Fase2FSM is
 	constant OLA_TIME		: std_logic_vector(7 downto 0) := "00000100"; -- 4 segundos
 	constant LEDR_TIME	: std_logic_vector(7 downto 0) := "00000110"; -- 6 segundos
 	
-	type TState is (E0, E1, E2, E3, MEG);
+	type TState is (E0, E0A, E1, E2, E2A, E2B, E3, MEG);
 	signal s_state : TState;
 
 begin
@@ -42,6 +42,10 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '1';
 					timeVal			<= OLA_TIME;
+					s_state 			<= E0A;
+					
+				when E0A =>
+					enable_timer	<= '0';
 					if(timeExp = '1') then
 						s_state  		<= E1;
 					end if;
@@ -66,12 +70,19 @@ begin
 					ledg				<= '0';
 					enable_timer	<= '1';
 					timeVal			<= LEDR_TIME;
+					s_state			<= E2A;
+					
+				when E2A =>
+					s_state <= E2B;
+					enable_timer <= '0';
+						
+				when E2B	=>
 					if((timeExp = '1') and (en_MEG = '0')) then
 						s_state <= E3;
-					elsif(en_MEG = '1') then
+					elsif((timeExp = '1') and (en_MEG = '1')) then
 						s_state <= MEG;
 					end if;
-				
+					
 				when E3 =>
 					ola				<= '0';
 					epro				<= '0';

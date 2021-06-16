@@ -15,19 +15,19 @@ end Display_Tam_Garrafa;
 
 architecture v1 of Display_Tam_Garrafa is
 -- display "33cl"
-constant N3			: std_logic_vector(6 downto 0) := "1001111";
-constant LetraC	: std_logic_vector(6 downto 0) := "0111001";
-constant LetraL	: std_logic_vector(6 downto 0) := "0111000";
+constant N3			: std_logic_vector(6 downto 0) := "0110000";
+constant LetraC	: std_logic_vector(6 downto 0) := "1000110";
+constant LetraL	: std_logic_vector(6 downto 0) := "1000111";
 
 -- display "25cl"
-constant N2			: std_logic_vector(6 downto 0) := "1011011";constant N5			: std_logic_vector(6 downto 0) := "1101101";
+constant N2			: std_logic_vector(6 downto 0) := "0100100";constant N5			: std_logic_vector(6 downto 0) := "0010010";
 
 -- display "50cl"
-constant N0			: std_logic_vector(6 downto 0) := "0111111";
+constant N0			: std_logic_vector(6 downto 0) := "1000000";
 
 -- display "10dl"
-constant N1			: std_logic_vector(6 downto 0) := "0000111";
-constant LetraD	: std_logic_vector(6 downto 0) := "1011110";
+constant N1			: std_logic_vector(6 downto 0) := "1111001";
+constant LetraD	: std_logic_vector(6 downto 0) := "0100001";
 
 begin
 

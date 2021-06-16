@@ -31,22 +31,23 @@ architecture shell of Fase2 is
 	signal s_25cl		: std_logic;
 	signal s_10dl		: std_logic;
 	signal s_sel		: std_logic;
+	signal s_sw			: std_logic_vector(17 downto 0);
 	
 begin
 
-u0:	entity work.FreqDivider(v1)
-			port map(clkIn		=> CLOCK_50,
-						k			=>	X"004C4B40",
-						clkOut	=> s_clk10hz);	
+u0:	entity work.ClkDividerN(RTL)
+			generic map(divFactor => 5000000)
+			port map(clkIn			 => CLOCK_50,
+						clkOut		 => s_clk10hz);	
 
 u1:	entity work.Display(v1)
 			port map(clk			=> CLOCK_50,
-						pisca			=> s_clk10hz,
+						clk10hz		=> s_clk10hz,
 						en_ola		=> s_ola,
 						en_epro		=> s_epro,
-						en_coca		=> SW(17),
-						en_agua		=> SW(16),
-						en_slar		=> SW(15),
+						en_coca		=> s_SW(17),
+						en_agua		=> s_SW(16),
+						en_slar		=> s_SW(15),
 						visor_uni	=> HEX0,
 						visor_dez	=> HEX1,
 						visor_cen	=> HEX2,
@@ -67,10 +68,10 @@ u3:	entity work.Fase2FSM(v1)
 						timeExp			=>	s_timeExp,
 						ola				=> s_ola,
 						epro				=> s_epro,
-						B1					=> SW(17),
-						B2					=> SW(16),
-						B3					=> SW(15),
-						en_MEG			=>	SW(0),	
+						B1					=> s_SW(17),
+						B2					=> s_SW(16),
+						B3					=> s_SW(15),
+						en_MEG			=>	s_SW(0),	
 						ledr				=> LEDR(0),
 						ledg				=>	LEDG(7));
 
@@ -88,7 +89,7 @@ u4:	entity work.Display_Tam_Garrafa(v1)
 u5:	entity work.Sel_Tam_Garrafa_FSM(v1)
 			port map(reset			=> not KEY(0),
 						clk			=> CLOCK_50,
-						enable		=> SW(0),
+						enable		=> s_SW(0),
 						sel			=> s_sel,
 						b33cl_d		=> s_33cl,
 						b25cl_d		=> s_25cl,
@@ -99,5 +100,13 @@ u6:	entity work.DebounceUnit(Behavioral)
 			port map(refClk			=> CLOCK_50,
 						dirtyIn			=> KEY(1),
 						pulsedOut		=> s_sel);
+		
+		
+		process(CLOCK_50)
+		begin
+			if(rising_edge(CLOCK_50)) then
+				s_sw <= SW;
+			end if;
+		end process;
 						
 end shell;
