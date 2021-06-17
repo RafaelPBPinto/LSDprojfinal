@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Fase2
-Wed Jun 16 10:36:04 2021
+Thu Jun 17 15:21:01 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -48,15 +48,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 16 10:36:04 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 17 15:21:01 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Fase2                                       ;
 ; Top-level Entity Name              ; Fase2                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 283                                         ;
-;     Total combinational functions  ; 256                                         ;
-;     Dedicated logic registers      ; 160                                         ;
-; Total registers                    ; 160                                         ;
+; Total logic elements               ; 292                                         ;
+;     Total combinational functions  ; 254                                         ;
+;     Dedicated logic registers      ; 169                                         ;
+; Total registers                    ; 169                                         ;
 ; Total pins                         ; 105                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -189,20 +189,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 283            ;
+; Estimated Total logic elements              ; 292            ;
 ;                                             ;                ;
-; Total combinational functions               ; 256            ;
+; Total combinational functions               ; 254            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 73             ;
-;     -- 3 input functions                    ; 69             ;
-;     -- <=2 input functions                  ; 114            ;
+;     -- 4 input functions                    ; 79             ;
+;     -- 3 input functions                    ; 68             ;
+;     -- <=2 input functions                  ; 107            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 173            ;
+;     -- normal mode                          ; 171            ;
 ;     -- arithmetic mode                      ; 83             ;
 ;                                             ;                ;
-; Total registers                             ; 160            ;
-;     -- Dedicated logic registers            ; 160            ;
+; Total registers                             ; 169            ;
+;     -- Dedicated logic registers            ; 169            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 105            ;
@@ -210,9 +210,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 160            ;
-; Total fan-out                               ; 1260           ;
-; Average fan-out                             ; 2.01           ;
+; Maximum fan-out                             ; 169            ;
+; Total fan-out                               ; 1302           ;
+; Average fan-out                             ; 2.06           ;
 +---------------------------------------------+----------------+
 
 
@@ -221,13 +221,13 @@ refer to the applicable agreement for further details.
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name         ; Library Name ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+---------------------+--------------+
-; |Fase2                      ; 256 (0)             ; 160 (4)                   ; 0           ; 0            ; 0       ; 0         ; 105  ; 0            ; |Fase2                        ; Fase2               ; work         ;
+; |Fase2                      ; 254 (0)             ; 169 (4)                   ; 0           ; 0            ; 0       ; 0         ; 105  ; 0            ; |Fase2                        ; Fase2               ; work         ;
 ;    |ClkDividerN:u0|         ; 55 (55)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|ClkDividerN:u0         ; ClkDividerN         ; work         ;
 ;    |DebounceUnit:u6|        ; 67 (67)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|DebounceUnit:u6        ; DebounceUnit        ; work         ;
 ;    |Display:u1|             ; 16 (16)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Display:u1             ; Display             ; work         ;
-;    |Display_Tam_Garrafa:u4| ; 12 (12)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Display_Tam_Garrafa:u4 ; Display_Tam_Garrafa ; work         ;
+;    |Display_Tam_Garrafa:u4| ; 10 (10)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Display_Tam_Garrafa:u4 ; Display_Tam_Garrafa ; work         ;
 ;    |Fase2FSM:u3|            ; 24 (24)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Fase2FSM:u3            ; Fase2FSM            ; work         ;
-;    |Sel_Tam_Garrafa_FSM:u5| ; 6 (6)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Sel_Tam_Garrafa_FSM:u5 ; Sel_Tam_Garrafa_FSM ; work         ;
+;    |Sel_Tam_Garrafa_FSM:u5| ; 6 (6)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|Sel_Tam_Garrafa_FSM:u5 ; Sel_Tam_Garrafa_FSM ; work         ;
 ;    |TimerFSM:u2|            ; 76 (76)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase2|TimerFSM:u2            ; TimerFSM            ; work         ;
 +-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -263,21 +263,17 @@ Encoding Type:  One-Hot
 +-------------+-------------+------------+-------------+-------------+------------+------------+-------------+------------+
 
 
-+----------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                               ;
-+-----------------------------------------+----------------------------------------+
-; Register name                           ; Reason for Removal                     ;
-+-----------------------------------------+----------------------------------------+
-; Display_Tam_Garrafa:u4|visor_cen[0,2,3] ; Stuck at GND due to stuck port data_in ;
-; Display_Tam_Garrafa:u4|visor_dez[3,4]   ; Stuck at GND due to stuck port data_in ;
-; Display_Tam_Garrafa:u4|visor_uni[0..2]  ; Stuck at VCC due to stuck port data_in ;
-; Display_Tam_Garrafa:u4|visor_uni[3..5]  ; Stuck at GND due to stuck port data_in ;
-; Display_Tam_Garrafa:u4|visor_uni[6]     ; Stuck at VCC due to stuck port data_in ;
-; Fase2FSM:u3|timeVal[3..7]               ; Merged with Fase2FSM:u3|timeVal[0]     ;
-; Fase2FSM:u3|timeVal[0]                  ; Stuck at GND due to stuck port data_in ;
-; Fase2FSM:u3|timeVal[2]                  ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 19  ;                                        ;
-+-----------------------------------------+----------------------------------------+
++-----------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                ;
++------------------------------------------+----------------------------------------+
+; Register name                            ; Reason for Removal                     ;
++------------------------------------------+----------------------------------------+
+; Display_Tam_Garrafa:u4|visor_uni[0..2,6] ; Stuck at VCC due to stuck port data_in ;
+; Fase2FSM:u3|timeVal[3..7]                ; Merged with Fase2FSM:u3|timeVal[0]     ;
+; Fase2FSM:u3|timeVal[0]                   ; Stuck at GND due to stuck port data_in ;
+; Fase2FSM:u3|timeVal[2]                   ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 11   ;                                        ;
++------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -285,12 +281,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 160   ;
+; Total registers                              ; 169   ;
 ; Number of registers using Synchronous Clear  ; 11    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 63    ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -300,12 +296,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Fase2|Display:u1|visor_mil[2]             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Fase2|Display:u1|visor_cen[6]             ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |Fase2|Display_Tam_Garrafa:u4|visor_mil[1] ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |Fase2|TimerFSM:u2|s_counter[11]           ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Fase2|TimerFSM:u2|s_counter[14]           ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |Fase2|TimerFSM:u2|s_counter[10]           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Fase2|TimerFSM:u2|s_counter[25]           ;
 ; 5:1                ; 23 bits   ; 69 LEs        ; 46 LEs               ; 23 LEs                 ; Yes        ; |Fase2|DebounceUnit:u6|s_debounceCnt[0]    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Fase2|Display:u1|visor_uni                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Fase2|Display:u1|visor_dez                ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |Fase2|Display_Tam_Garrafa:u4|visor_dez    ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |Fase2|Fase2FSM:u3|s_state                 ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 8 LEs                ; 6 LEs                  ; No         ; |Fase2|Fase2FSM:u3|s_state                 ;
@@ -341,23 +337,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 105                         ;
-; cycloneiii_ff         ; 160                         ;
-;     ENA               ; 55                          ;
+; cycloneiii_ff         ; 169                         ;
+;     ENA               ; 56                          ;
 ;     ENA SCLR          ; 8                           ;
 ;     SCLR              ; 3                           ;
-;     plain             ; 94                          ;
-; cycloneiii_lcell_comb ; 258                         ;
+;     plain             ; 102                         ;
+; cycloneiii_lcell_comb ; 256                         ;
 ;     arith             ; 83                          ;
 ;         2 data inputs ; 83                          ;
-;     normal            ; 175                         ;
+;     normal            ; 173                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 12                          ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 69                          ;
-;         4 data inputs ; 73                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 68                          ;
+;         4 data inputs ; 79                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.37                        ;
+; Average LUT depth     ; 3.31                        ;
 +-----------------------+-----------------------------+
 
 
@@ -366,7 +362,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -376,7 +372,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Jun 16 10:35:53 2021
+    Info: Processing started: Thu Jun 17 15:20:36 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Fase2 -c Fase2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -442,15 +438,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
     Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
     Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
-    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
-    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
-    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
     Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 15
-    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 16
-    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 16
-    Warning (13410): Pin "HEX6[0]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 17
-    Warning (13410): Pin "HEX6[2]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 17
-    Warning (13410): Pin "HEX6[3]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -471,14 +459,14 @@ Warning (21074): Design contains 16 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "SW[14]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 7
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd Line: 8
-Info (21057): Implemented 398 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 407 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 82 output pins
-    Info (21061): Implemented 293 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
-    Info: Peak virtual memory: 4789 megabytes
-    Info: Processing ended: Wed Jun 16 10:36:04 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21061): Implemented 302 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Thu Jun 17 15:21:01 2021
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:55
 
 

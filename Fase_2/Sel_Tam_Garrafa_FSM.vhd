@@ -24,7 +24,7 @@ begin
 				if (reset = '1') then
 					s_state <= B33CL;
 				else
-					case (s_state) is
+					case (s_state) is	
 					when B33CL =>
 						b33cl_d	<= '1';
 						b25cl_d	<= '0';

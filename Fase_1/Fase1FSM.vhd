@@ -14,8 +14,7 @@ entity Fase1FSM is
 			agua				: in std_logic;
 			slar				: in std_logic;
 			ledr				: out std_logic;
-			ledg 				: out std_logic;
-			debug				: out std_logic_vector(3 downto 0));
+			ledg 				: out std_logic);
 
 end Fase1FSM;
 
@@ -91,15 +90,6 @@ begin
 			
 			end if;
 		end if;
-	end process;
-	
-	debug <= "0000" when s_state = E0 else
-				"0001" when s_state = E0A else
-				"0010" when s_state = E1 else 
-				"0011" when s_state = E2 else 
-				"0100" when s_state = E2A else 
-				"0101" when s_state = E2B else 
-				"0111" when s_state = E3 else
-				"1111";  
+	end process;  
 	
 end v1;

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for ProjFinalFase1
-Mon Jun 14 18:01:54 2021
+Wed Jun 16 11:19:52 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -103,8 +103,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   2.0%      ;
-;     Processors 3-4         ;   0.4%      ;
+;     Processor 2            ;   1.9%      ;
+;     Processors 3-4         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -122,7 +122,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 221.78 MHz ; 221.78 MHz      ; CLOCK_50   ;      ;
+; 211.95 MHz ; 211.95 MHz      ; CLOCK_50   ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -138,7 +138,7 @@ HTML report is unavailable in plain text report export.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
-; CLOCK_50 ; -3.509 ; -224.976        ;
+; CLOCK_50 ; -3.718 ; -238.652        ;
 +----------+--------+-----------------+
 
 
@@ -147,7 +147,7 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.385 ; 0.000           ;
+; CLOCK_50 ; 0.402 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -177,106 +177,106 @@ No paths to report.
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.509 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.426      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.506 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.423      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.482 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.968      ;
-; -3.443 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.361      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.421 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.512     ; 3.907      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.398 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.276      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.395 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.120     ; 4.273      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.360 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.277      ;
-; -3.353 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.271      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.352 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.551     ; 3.799      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.351 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.268      ;
-; -3.311 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.229      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.311 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.228      ;
-; -3.309 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.227      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
-; -3.307 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.090     ; 4.215      ;
+; -3.718 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.637      ;
+; -3.716 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.635      ;
+; -3.631 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.550      ;
+; -3.629 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.548      ;
+; -3.542 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.461      ;
+; -3.522 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.441      ;
+; -3.513 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.432      ;
+; -3.513 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.541     ; 3.970      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.504 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.422      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.502 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.420      ;
+; -3.465 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.382      ;
+; -3.442 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.361      ;
+; -3.441 ; TimerFSM:u2|s_counter[10] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.360      ;
+; -3.440 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.360      ;
+; -3.440 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.360      ;
+; -3.440 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.360      ;
+; -3.440 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.360      ;
+; -3.438 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.358      ;
+; -3.438 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.358      ;
+; -3.438 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.358      ;
+; -3.438 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.358      ;
+; -3.433 ; TimerFSM:u2|s_counter[6]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.352      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.417 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.335      ;
+; -3.416 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.334      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.415 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.333      ;
+; -3.410 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.328      ;
+; -3.410 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.328      ;
+; -3.402 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.320      ;
+; -3.399 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.317      ;
+; -3.396 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.315      ;
+; -3.392 ; TimerFSM:u2|s_counter[8]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.510     ; 3.880      ;
+; -3.382 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.301      ;
+; -3.356 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.541     ; 3.813      ;
+; -3.353 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.273      ;
+; -3.353 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.273      ;
+; -3.353 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.273      ;
+; -3.353 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.273      ;
+; -3.351 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.271      ;
+; -3.351 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.271      ;
+; -3.351 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.271      ;
+; -3.351 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.078     ; 4.271      ;
+; -3.348 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.081     ; 4.265      ;
+; -3.347 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.266      ;
+; -3.341 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.362      ; 4.701      ;
+; -3.337 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 4.256      ;
+; -3.336 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.362      ; 4.696      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
+; -3.328 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.080     ; 4.246      ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -285,106 +285,106 @@ No paths to report.
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                       ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.385 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.098      ; 0.669      ;
-; 0.401 ; Fase1FSM:u3|timeVal[1]          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.669      ;
-; 0.401 ; Fase1FSM:u3|enable_timer        ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.669      ;
-; 0.402 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|ola                 ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
+; 0.402 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|ledg                ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|ledr                ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
-; 0.402 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|s_state.E3          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
+; 0.402 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
+; 0.402 ; Fase1FSM:u3|timeVal[1]          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
+; 0.402 ; Fase1FSM:u3|enable_timer        ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
 ; 0.402 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.669      ;
-; 0.449 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.717      ;
-; 0.458 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.726      ;
-; 0.502 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.769      ;
-; 0.502 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.769      ;
-; 0.505 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.772      ;
-; 0.606 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.873      ;
-; 0.654 ; ClkDividerN:u0|s_divCounter[5]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.921      ;
-; 0.655 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.922      ;
-; 0.655 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.922      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[13] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.656 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.923      ;
-; 0.657 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.924      ;
-; 0.657 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.924      ;
-; 0.657 ; ClkDividerN:u0|s_divCounter[7]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.924      ;
-; 0.658 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
-; 0.658 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
-; 0.658 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
-; 0.658 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
-; 0.658 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.925      ;
-; 0.659 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
-; 0.659 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.926      ;
-; 0.661 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.928      ;
-; 0.675 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.942      ;
-; 0.677 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.945      ;
-; 0.681 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.948      ;
-; 0.684 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.952      ;
-; 0.697 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.964      ;
-; 0.697 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.965      ;
-; 0.701 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.969      ;
-; 0.703 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.971      ;
-; 0.709 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.977      ;
-; 0.710 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.978      ;
-; 0.715 ; Fase1FSM:u3|ola                 ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.982      ;
-; 0.730 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.997      ;
-; 0.733 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.000      ;
-; 0.734 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.001      ;
-; 0.760 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.027      ;
-; 0.761 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.028      ;
-; 0.764 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.032      ;
-; 0.769 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.036      ;
-; 0.775 ; Fase1FSM:u3|epro                ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.042      ;
-; 0.775 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.043      ;
-; 0.776 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.043      ;
-; 0.776 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.044      ;
-; 0.788 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.055      ;
-; 0.837 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.105      ;
-; 0.848 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.115      ;
-; 0.874 ; s_sw[17]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.141      ;
-; 0.884 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.151      ;
-; 0.886 ; s_sw[17]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.153      ;
-; 0.897 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.164      ;
-; 0.918 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[16]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.620      ;
-; 0.918 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[24]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.516      ; 1.620      ;
-; 0.938 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.206      ;
-; 0.938 ; ClkDividerN:u0|s_divCounter[11] ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.511      ; 1.635      ;
-; 0.939 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.207      ;
-; 0.951 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.218      ;
-; 0.955 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.223      ;
-; 0.961 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.229      ;
-; 0.965 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.233      ;
-; 0.966 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.234      ;
-; 0.973 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.240      ;
-; 0.973 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.240      ;
-; 0.973 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.240      ;
-; 0.973 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.240      ;
-; 0.975 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.242      ;
-; 0.975 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.242      ;
-; 0.975 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.242      ;
-; 0.975 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.242      ;
-; 0.976 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.243      ;
-; 0.983 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.250      ;
-; 0.983 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.250      ;
-; 0.983 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.250      ;
-; 0.984 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.251      ;
-; 0.984 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.251      ;
-; 0.985 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.252      ;
-; 0.985 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.252      ;
-; 0.986 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.253      ;
-; 0.988 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
-; 0.988 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
-; 0.988 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.255      ;
-; 0.989 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.256      ;
+; 0.403 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.669      ;
+; 0.452 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.719      ;
+; 0.452 ; Fase1FSM:u3|epro                ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.719      ;
+; 0.465 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.731      ;
+; 0.467 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.733      ;
+; 0.473 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.739      ;
+; 0.473 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.739      ;
+; 0.567 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.523      ; 1.276      ;
+; 0.576 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.842      ;
+; 0.581 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.848      ;
+; 0.582 ; Fase1FSM:u3|ola                 ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.849      ;
+; 0.612 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.878      ;
+; 0.612 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.878      ;
+; 0.615 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.881      ;
+; 0.624 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.891      ;
+; 0.639 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 0.907      ;
+; 0.646 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.912      ;
+; 0.649 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.916      ;
+; 0.650 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.916      ;
+; 0.654 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.921      ;
+; 0.655 ; ClkDividerN:u0|s_divCounter[5]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.921      ;
+; 0.655 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 0.922      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.922      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[13] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.657 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.923      ;
+; 0.658 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.923      ;
+; 0.658 ; ClkDividerN:u0|s_divCounter[7]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.924      ;
+; 0.659 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.659 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.924      ;
+; 0.660 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.925      ;
+; 0.660 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.925      ;
+; 0.660 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.925      ;
+; 0.660 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.925      ;
+; 0.660 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.925      ;
+; 0.661 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.926      ;
+; 0.661 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.926      ;
+; 0.663 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 0.928      ;
+; 0.682 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 0.948      ;
+; 0.716 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.523      ; 1.425      ;
+; 0.761 ; s_sw[16]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.027      ;
+; 0.768 ; s_sw[16]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.034      ;
+; 0.771 ; s_sw[16]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.037      ;
+; 0.798 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[17]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.550      ; 1.534      ;
+; 0.809 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[13]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.550      ; 1.545      ;
+; 0.824 ; s_sw[17]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.090      ;
+; 0.827 ; s_sw[17]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.093      ;
+; 0.843 ; s_sw[17]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.109      ;
+; 0.846 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.114      ;
+; 0.847 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.115      ;
+; 0.850 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.118      ;
+; 0.869 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.135      ;
+; 0.900 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.168      ;
+; 0.904 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.171      ;
+; 0.922 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[30]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.550      ; 1.658      ;
+; 0.930 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[29]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.550      ; 1.666      ;
+; 0.946 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.213      ;
+; 0.948 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.081      ; 1.215      ;
+; 0.950 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.216      ;
+; 0.951 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.082      ; 1.219      ;
+; 0.953 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.219      ;
+; 0.953 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.219      ;
+; 0.953 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.219      ;
+; 0.955 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.221      ;
+; 0.974 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.240      ;
+; 0.974 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.240      ;
+; 0.975 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.240      ;
+; 0.977 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.242      ;
+; 0.977 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.242      ;
+; 0.977 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.242      ;
+; 0.977 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.242      ;
+; 0.984 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.250      ;
+; 0.984 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.250      ;
+; 0.984 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.250      ;
+; 0.986 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.251      ;
+; 0.986 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.252      ;
+; 0.986 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.251      ;
+; 0.987 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.252      ;
+; 0.988 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.253      ;
+; 0.988 ; ClkDividerN:u0|s_divCounter[6]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.254      ;
+; 0.989 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.255      ;
+; 0.989 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.255      ;
+; 0.990 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.255      ;
+; 0.991 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.080      ; 1.257      ;
+; 0.991 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.079      ; 1.256      ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -394,13 +394,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+-------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary               ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 242.9 MHz ; 242.9 MHz       ; CLOCK_50   ;      ;
-+-----------+-----------------+------------+------+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 232.23 MHz ; 232.23 MHz      ; CLOCK_50   ;      ;
++------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -409,7 +409,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; -3.117 ; -195.156       ;
+; CLOCK_50 ; -3.306 ; -206.691       ;
 +----------+--------+----------------+
 
 
@@ -418,7 +418,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.338 ; 0.000          ;
+; CLOCK_50 ; 0.353 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -448,106 +448,106 @@ No paths to report.
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.043      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.116 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 4.042      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.108 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.639      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.052 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.583      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.024 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.915      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -3.023 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.108     ; 3.914      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.988 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.503     ; 3.484      ;
-; -2.987 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.914      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.985 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.911      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.980 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.906      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.941 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.468     ; 3.472      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.940 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.073     ; 3.866      ;
-; -2.932 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 3.852      ;
-; -2.932 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 3.852      ;
-; -2.932 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.079     ; 3.852      ;
+; -3.306 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.234      ;
+; -3.305 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.233      ;
+; -3.233 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.161      ;
+; -3.232 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.160      ;
+; -3.152 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.080      ;
+; -3.147 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.497     ; 3.649      ;
+; -3.124 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 4.052      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.108 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.035      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.107 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 4.034      ;
+; -3.062 ; TimerFSM:u2|s_counter[10] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.990      ;
+; -3.062 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.990      ;
+; -3.049 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.978      ;
+; -3.049 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.978      ;
+; -3.049 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.978      ;
+; -3.049 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.978      ;
+; -3.049 ; TimerFSM:u2|s_counter[6]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.977      ;
+; -3.048 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.977      ;
+; -3.048 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.977      ;
+; -3.048 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.977      ;
+; -3.048 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.977      ;
+; -3.042 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.970      ;
+; -3.041 ; TimerFSM:u2|s_counter[8]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.467     ; 3.573      ;
+; -3.037 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.966      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.035 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.962      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.034 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.961      ;
+; -3.028 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.956      ;
+; -3.027 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.955      ;
+; -3.021 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.948      ;
+; -3.018 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.946      ;
+; -3.016 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.071     ; 3.944      ;
+; -3.000 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.497     ; 3.502      ;
+; -2.980 ; TimerFSM:u2|s_counter[14] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.907      ;
+; -2.976 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.905      ;
+; -2.976 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.905      ;
+; -2.976 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.905      ;
+; -2.976 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.905      ;
+; -2.975 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.904      ;
+; -2.975 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.904      ;
+; -2.975 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.904      ;
+; -2.975 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.070     ; 3.904      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.954 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.072     ; 3.881      ;
+; -2.949 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.498     ; 3.450      ;
+; -2.949 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.498     ; 3.450      ;
+; -2.949 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.498     ; 3.450      ;
+; -2.949 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.498     ; 3.450      ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -556,106 +556,106 @@ No paths to report.
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                       ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.338 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.088      ; 0.597      ;
+; 0.353 ; Fase1FSM:u3|ola                 ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
+; 0.353 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|ledg                ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|ledr                ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
-; 0.353 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|s_state.E3          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
+; 0.353 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|timeVal[1]          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|enable_timer        ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
 ; 0.353 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.597      ;
-; 0.354 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.597      ;
-; 0.354 ; Fase1FSM:u3|ola                 ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.597      ;
-; 0.406 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.650      ;
-; 0.423 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.667      ;
-; 0.460 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.703      ;
-; 0.461 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.704      ;
-; 0.464 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.707      ;
-; 0.563 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.806      ;
-; 0.598 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; ClkDividerN:u0|s_divCounter[5]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.598 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
-; 0.599 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
-; 0.599 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
-; 0.599 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.843      ;
-; 0.600 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
-; 0.600 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
-; 0.600 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
-; 0.600 ; ClkDividerN:u0|s_divCounter[13] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
-; 0.600 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.844      ;
-; 0.601 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
-; 0.601 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
-; 0.601 ; ClkDividerN:u0|s_divCounter[7]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
-; 0.601 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.845      ;
-; 0.602 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
-; 0.602 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
-; 0.602 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
-; 0.602 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.846      ;
-; 0.604 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.848      ;
-; 0.616 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.860      ;
-; 0.621 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.865      ;
-; 0.622 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.866      ;
-; 0.636 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.880      ;
-; 0.639 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.882      ;
-; 0.641 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.885      ;
-; 0.645 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.889      ;
-; 0.647 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.891      ;
-; 0.652 ; Fase1FSM:u3|ola                 ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.895      ;
-; 0.660 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.904      ;
-; 0.661 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.905      ;
-; 0.668 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.911      ;
-; 0.672 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.915      ;
-; 0.676 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.919      ;
-; 0.694 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.937      ;
-; 0.695 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.938      ;
-; 0.705 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.949      ;
-; 0.713 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.957      ;
-; 0.714 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.957      ;
-; 0.714 ; Fase1FSM:u3|epro                ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.957      ;
-; 0.718 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.961      ;
-; 0.721 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.965      ;
-; 0.722 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.966      ;
-; 0.768 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.013      ;
-; 0.784 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.027      ;
-; 0.788 ; s_sw[17]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.031      ;
-; 0.805 ; s_sw[17]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.048      ;
-; 0.823 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.066      ;
-; 0.829 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.072      ;
-; 0.833 ; ClkDividerN:u0|s_divCounter[11] ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.468      ; 1.472      ;
-; 0.851 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[16]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.469      ; 1.491      ;
-; 0.852 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[24]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.469      ; 1.492      ;
-; 0.866 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.109      ;
-; 0.870 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.115      ;
-; 0.870 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.114      ;
-; 0.872 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.116      ;
-; 0.874 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.118      ;
-; 0.880 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.123      ;
-; 0.883 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.127      ;
-; 0.886 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
-; 0.886 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
-; 0.886 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.130      ;
-; 0.887 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.131      ;
-; 0.887 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.131      ;
-; 0.887 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.131      ;
-; 0.887 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.131      ;
-; 0.888 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.132      ;
-; 0.888 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.132      ;
-; 0.888 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.132      ;
-; 0.889 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
-; 0.889 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.133      ;
-; 0.890 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.134      ;
-; 0.892 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.136      ;
-; 0.894 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.137      ;
-; 0.897 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.141      ;
-; 0.898 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.142      ;
-; 0.898 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.142      ;
+; 0.355 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.597      ;
+; 0.409 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.653      ;
+; 0.409 ; Fase1FSM:u3|epro                ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.653      ;
+; 0.422 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.664      ;
+; 0.425 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.667      ;
+; 0.437 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.679      ;
+; 0.438 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.680      ;
+; 0.522 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.764      ;
+; 0.523 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.479      ; 1.173      ;
+; 0.532 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.776      ;
+; 0.533 ; Fase1FSM:u3|ola                 ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.777      ;
+; 0.569 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.811      ;
+; 0.569 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.811      ;
+; 0.572 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.815      ;
+; 0.578 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.822      ;
+; 0.594 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.838      ;
+; 0.596 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 0.841      ;
+; 0.597 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.841      ;
+; 0.598 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.842      ;
+; 0.598 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.841      ;
+; 0.600 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; ClkDividerN:u0|s_divCounter[5]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.600 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.842      ;
+; 0.601 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.843      ;
+; 0.601 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.843      ;
+; 0.601 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.843      ;
+; 0.602 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; ClkDividerN:u0|s_divCounter[13] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.844      ;
+; 0.602 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.845      ;
+; 0.603 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; ClkDividerN:u0|s_divCounter[7]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.603 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.845      ;
+; 0.604 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.846      ;
+; 0.604 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.846      ;
+; 0.604 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.846      ;
+; 0.604 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.846      ;
+; 0.606 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.848      ;
+; 0.624 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.866      ;
+; 0.668 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.479      ; 1.318      ;
+; 0.685 ; s_sw[16]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.927      ;
+; 0.698 ; s_sw[16]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.940      ;
+; 0.701 ; s_sw[16]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.943      ;
+; 0.733 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[17]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.504      ; 1.408      ;
+; 0.743 ; s_sw[17]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.985      ;
+; 0.747 ; s_sw[17]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.989      ;
+; 0.750 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[13]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.504      ; 1.425      ;
+; 0.767 ; s_sw[17]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.009      ;
+; 0.786 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.031      ;
+; 0.787 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.032      ;
+; 0.788 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.033      ;
+; 0.814 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.056      ;
+; 0.836 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.081      ;
+; 0.840 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.084      ;
+; 0.853 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.074      ; 1.098      ;
+; 0.855 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[30]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.504      ; 1.530      ;
+; 0.863 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[29]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.504      ; 1.538      ;
+; 0.870 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.114      ;
+; 0.872 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 1.116      ;
+; 0.873 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 1.116      ;
+; 0.884 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.126      ;
+; 0.885 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.127      ;
+; 0.888 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.888 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.888 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.888 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.130      ;
+; 0.889 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.889 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.131      ;
+; 0.890 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.890 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.132      ;
+; 0.891 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.133      ;
+; 0.891 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.133      ;
+; 0.891 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.133      ;
+; 0.891 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.133      ;
+; 0.892 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.134      ;
+; 0.893 ; ClkDividerN:u0|s_divCounter[6]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.135      ;
+; 0.894 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.136      ;
+; 0.899 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.141      ;
+; 0.900 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.142      ;
+; 0.900 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.142      ;
+; 0.901 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 1.143      ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -670,7 +670,7 @@ No synchronizer chains to report.
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; -1.228 ; -59.945        ;
+; CLOCK_50 ; -1.272 ; -68.264        ;
 +----------+--------+----------------+
 
 
@@ -679,7 +679,7 @@ No synchronizer chains to report.
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.173 ; 0.000          ;
+; CLOCK_50 ; 0.180 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -700,7 +700,7 @@ No paths to report.
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
-; CLOCK_50 ; -3.000 ; -118.829                     ;
+; CLOCK_50 ; -3.000 ; -118.828                     ;
 +----------+--------+------------------------------+
 
 
@@ -709,106 +709,106 @@ No paths to report.
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                 ; To Node                   ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
-; -1.228 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.174      ;
-; -1.179 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.125      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.172 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.170 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.115      ;
-; -1.160 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.106      ;
-; -1.157 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.103      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.157 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.900      ;
-; -1.153 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.099      ;
-; -1.138 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.084      ;
-; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.073      ;
-; -1.124 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.047     ; 2.064      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.121 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.864      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.117 ; TimerFSM:u2|s_counter[26] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.037      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.115 ; TimerFSM:u2|s_counter[31] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.067     ; 2.035      ;
-; -1.109 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.047     ; 2.049      ;
-; -1.109 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.047     ; 2.049      ;
-; -1.107 ; TimerFSM:u2|s_counter[2]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.053      ;
-; -1.103 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.047     ; 2.043      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.103 ; TimerFSM:u2|s_counter[21] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.048      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.102 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.269     ; 1.820      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.101 ; TimerFSM:u2|s_counter[22] ; TimerFSM:u2|s_counter[29] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.046      ;
-; -1.091 ; TimerFSM:u2|s_counter[7]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.037      ;
-; -1.088 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.047     ; 2.028      ;
-; -1.086 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.032      ;
-; -1.085 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.031      ;
-; -1.084 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.030      ;
-; -1.084 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.029      ;
-; -1.084 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.029      ;
-; -1.084 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.029      ;
-; -1.084 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[21] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.029      ;
-; -1.084 ; TimerFSM:u2|s_counter[29] ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.029      ;
+; -1.272 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.218      ;
+; -1.271 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.217      ;
+; -1.263 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.209      ;
+; -1.257 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.202      ;
+; -1.226 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.172      ;
+; -1.225 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.171      ;
+; -1.218 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.164      ; 2.369      ;
+; -1.204 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.150      ;
+; -1.198 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.143      ;
+; -1.196 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.142      ;
+; -1.189 ; TimerFSM:u2|s_counter[16] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.135      ;
+; -1.188 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.134      ;
+; -1.188 ; TimerFSM:u2|s_counter[18] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.134      ;
+; -1.176 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.121      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.173 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.118      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.172 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.117      ;
+; -1.171 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.116      ;
+; -1.169 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.115      ;
+; -1.163 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.108      ;
+; -1.159 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.164      ; 2.310      ;
+; -1.158 ; TimerFSM:u2|s_counter[2]  ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.104      ;
+; -1.152 ; TimerFSM:u2|s_counter[2]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.097      ;
+; -1.146 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.164      ; 2.297      ;
+; -1.145 ; TimerFSM:u2|s_counter[30] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.255     ; 1.877      ;
+; -1.143 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[22] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.088      ;
+; -1.143 ; TimerFSM:u2|s_counter[8]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.244     ; 1.886      ;
+; -1.138 ; TimerFSM:u2|s_counter[6]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.084      ;
+; -1.137 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.083      ;
+; -1.137 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.083      ;
+; -1.137 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.083      ;
+; -1.137 ; TimerFSM:u2|s_counter[15] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.083      ;
+; -1.137 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.083      ;
+; -1.136 ; TimerFSM:u2|s_counter[9]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.082      ;
+; -1.136 ; TimerFSM:u2|s_counter[20] ; TimerFSM:u2|s_counter[28] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.082      ;
+; -1.135 ; TimerFSM:u2|s_counter[10] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.081      ;
+; -1.129 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.075      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.127 ; TimerFSM:u2|s_counter[4]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.072      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[4]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[5]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[6]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[7]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[9]  ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[10] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[11] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[12] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[15] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[16] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.126 ; TimerFSM:u2|s_counter[5]  ; TimerFSM:u2|s_counter[20] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.071      ;
+; -1.124 ; TimerFSM:u2|s_counter[2]  ; TimerFSM:u2|s_counter[31] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.164      ; 2.275      ;
+; -1.121 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[30] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; 0.164      ; 2.272      ;
+; -1.120 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[24] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.065      ;
+; -1.120 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[25] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.066      ;
+; -1.119 ; TimerFSM:u2|s_counter[14] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.065      ;
+; -1.117 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.062      ;
+; -1.116 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.062      ;
+; -1.112 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[18] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.057      ;
+; -1.104 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[23] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.042     ; 2.049      ;
+; -1.102 ; TimerFSM:u2|s_counter[3]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.048      ;
+; -1.102 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[26] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.048      ;
+; -1.102 ; TimerFSM:u2|s_counter[0]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.048      ;
+; -1.098 ; TimerFSM:u2|s_counter[1]  ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.044      ;
+; -1.095 ; TimerFSM:u2|s_counter[24] ; TimerFSM:u2|s_counter[14] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.041      ;
+; -1.094 ; TimerFSM:u2|s_counter[2]  ; TimerFSM:u2|s_counter[27] ; CLOCK_50     ; CLOCK_50    ; 1.000        ; -0.041     ; 2.040      ;
 +--------+---------------------------+---------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -817,35 +817,39 @@ No paths to report.
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                       ; To Node                         ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.173 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.050      ; 0.307      ;
+; 0.180 ; Fase1FSM:u3|ledr                ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.307      ;
 ; 0.180 ; Fase1FSM:u3|timeVal[1]          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.307      ;
 ; 0.180 ; Fase1FSM:u3|enable_timer        ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.307      ;
+; 0.181 ; Fase1FSM:u3|ola                 ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
+; 0.181 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
 ; 0.181 ; Fase1FSM:u3|ledg                ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
-; 0.181 ; Fase1FSM:u3|ledr                ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
-; 0.181 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
 ; 0.181 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
 ; 0.181 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|s_state.E3          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
+; 0.181 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
 ; 0.181 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.307      ;
-; 0.182 ; Fase1FSM:u3|epro                ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.307      ;
-; 0.182 ; Fase1FSM:u3|ola                 ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.307      ;
-; 0.203 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.330      ;
-; 0.207 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.334      ;
-; 0.227 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.352      ;
-; 0.229 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.354      ;
-; 0.231 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.356      ;
-; 0.273 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.398      ;
-; 0.299 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.299 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
+; 0.182 ; ClkDividerN:u0|clkOut           ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.307      ;
+; 0.211 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.337      ;
+; 0.211 ; Fase1FSM:u3|epro                ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.337      ;
+; 0.212 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.337      ;
+; 0.212 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.337      ;
+; 0.217 ; s_sw[17]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.342      ;
+; 0.219 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.344      ;
+; 0.252 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.252      ; 0.588      ;
+; 0.263 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.389      ;
+; 0.263 ; Fase1FSM:u3|ola                 ; Display:u1|visor_uni[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.389      ;
+; 0.265 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.390      ;
+; 0.268 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.394      ;
+; 0.272 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.399      ;
+; 0.276 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.401      ;
+; 0.277 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.402      ;
+; 0.281 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.408      ;
+; 0.289 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|ola                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.415      ;
+; 0.292 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.418      ;
+; 0.297 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.423      ;
 ; 0.299 ; ClkDividerN:u0|s_divCounter[5]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.424      ;
-; 0.299 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
-; 0.300 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.426      ;
+; 0.299 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
+; 0.299 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.425      ;
+; 0.300 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[15] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.424      ;
 ; 0.300 ; ClkDividerN:u0|s_divCounter[13] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
 ; 0.300 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
 ; 0.300 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[10] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
@@ -853,70 +857,66 @@ No paths to report.
 ; 0.300 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
 ; 0.300 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
 ; 0.300 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.425      ;
-; 0.301 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
-; 0.301 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.427      ;
+; 0.301 ; ClkDividerN:u0|s_divCounter[30] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.425      ;
+; 0.301 ; ClkDividerN:u0|s_divCounter[21] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.425      ;
+; 0.301 ; ClkDividerN:u0|s_divCounter[17] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.425      ;
 ; 0.301 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.426      ;
-; 0.306 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.431      ;
-; 0.309 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.435      ;
-; 0.311 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.436      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[23] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[20] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.302 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.426      ;
+; 0.303 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.427      ;
+; 0.303 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.427      ;
+; 0.303 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.427      ;
 ; 0.311 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[0]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.436      ;
-; 0.317 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.442      ;
-; 0.318 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.443      ;
-; 0.319 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.444      ;
-; 0.320 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.445      ;
-; 0.321 ; s_sw[15]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.446      ;
-; 0.323 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.448      ;
-; 0.332 ; Fase1FSM:u3|ola                 ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.457      ;
-; 0.341 ; Fase1FSM:u3|s_state.E1          ; Fase1FSM:u3|s_state.E2          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.467      ;
-; 0.341 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.466      ;
-; 0.341 ; s_sw[15]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.466      ;
-; 0.342 ; s_sw[17]                        ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.467      ;
-; 0.343 ; s_sw[15]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.468      ;
-; 0.343 ; s_sw[17]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.468      ;
-; 0.344 ; s_sw[17]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.469      ;
-; 0.350 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.475      ;
-; 0.350 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.475      ;
-; 0.351 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.476      ;
-; 0.351 ; Fase1FSM:u3|epro                ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.476      ;
-; 0.364 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.489      ;
-; 0.373 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.500      ;
-; 0.381 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.506      ;
-; 0.392 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E2B         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.518      ;
-; 0.403 ; s_sw[17]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.528      ;
-; 0.405 ; s_sw[17]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.530      ;
-; 0.408 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|s_state.E0A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.534      ;
-; 0.409 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[16]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.739      ;
-; 0.410 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[24]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.246      ; 0.740      ;
-; 0.417 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.544      ;
-; 0.431 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.556      ;
-; 0.432 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.557      ;
-; 0.433 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.558      ;
-; 0.438 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.563      ;
-; 0.439 ; Fase1FSM:u3|ola                 ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.564      ;
-; 0.442 ; Fase1FSM:u3|ola                 ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.567      ;
-; 0.443 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.568      ;
-; 0.448 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.574      ;
-; 0.449 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.575      ;
+; 0.330 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[19]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.252      ; 0.666      ;
+; 0.348 ; s_sw[16]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.473      ;
+; 0.350 ; s_sw[16]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.475      ;
+; 0.353 ; s_sw[16]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.478      ;
+; 0.370 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[17]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.261      ; 0.715      ;
+; 0.372 ; Fase1FSM:u3|timeVal[1]          ; TimerFSM:u2|s_counter[13]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.261      ; 0.717      ;
+; 0.381 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.508      ;
+; 0.382 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|ledr                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.509      ;
+; 0.383 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|s_state.E2A         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.510      ;
+; 0.393 ; s_sw[17]                        ; Display:u1|visor_cen[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.518      ;
+; 0.394 ; s_sw[16]                        ; Display:u1|visor_mil[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.519      ;
+; 0.395 ; s_sw[17]                        ; Display:u1|visor_cen[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.520      ;
+; 0.397 ; s_sw[17]                        ; Display:u1|visor_dez[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.522      ;
+; 0.401 ; Fase1FSM:u3|s_state.E2B         ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.528      ;
+; 0.405 ; Fase1FSM:u3|s_state.E0          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.532      ;
+; 0.425 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.551      ;
+; 0.427 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[30]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.261      ; 0.772      ;
+; 0.427 ; Fase1FSM:u3|s_state.E0A         ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.553      ;
+; 0.433 ; s_sw[16]                        ; Display:u1|visor_mil[4]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.558      ;
+; 0.435 ; Fase1FSM:u3|enable_timer        ; TimerFSM:u2|s_counter[29]       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.261      ; 0.780      ;
+; 0.436 ; s_sw[16]                        ; Display:u1|visor_mil[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.561      ;
+; 0.436 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|ledg                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.562      ;
+; 0.437 ; s_sw[16]                        ; Display:u1|visor_cen[6]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.562      ;
+; 0.438 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|epro                ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.564      ;
+; 0.439 ; Fase1FSM:u3|s_state.E2A         ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.565      ;
+; 0.439 ; s_sw[16]                        ; Display:u1|visor_mil[2]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.564      ;
 ; 0.449 ; ClkDividerN:u0|s_divCounter[1]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.574      ;
-; 0.449 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.575      ;
-; 0.450 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.576      ;
-; 0.450 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.576      ;
+; 0.449 ; ClkDividerN:u0|s_divCounter[15] ; ClkDividerN:u0|s_divCounter[16] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.573      ;
 ; 0.450 ; ClkDividerN:u0|s_divCounter[3]  ; ClkDividerN:u0|s_divCounter[4]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
-; 0.450 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[1]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.575      ;
-; 0.451 ; ClkDividerN:u0|s_divCounter[11] ; ClkDividerN:u0|clkOut           ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.244      ; 0.779      ;
-; 0.454 ; Fase1FSM:u3|s_state.E3          ; Fase1FSM:u3|s_state.E1          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.580      ;
-; 0.455 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|timeVal[1]          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.582      ;
-; 0.455 ; Fase1FSM:u3|epro                ; Display:u1|visor_cen[5]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.580      ;
-; 0.456 ; Fase1FSM:u3|s_state.E2          ; Fase1FSM:u3|enable_timer        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.583      ;
-; 0.458 ; Fase1FSM:u3|epro                ; Display:u1|visor_dez[3]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
-; 0.458 ; ClkDividerN:u0|s_divCounter[8]  ; ClkDividerN:u0|s_divCounter[8]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
-; 0.458 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
-; 0.458 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
+; 0.451 ; ClkDividerN:u0|s_divCounter[29] ; ClkDividerN:u0|s_divCounter[30] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.451 ; ClkDividerN:u0|s_divCounter[23] ; ClkDividerN:u0|s_divCounter[24] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.575      ;
+; 0.452 ; ClkDividerN:u0|s_divCounter[25] ; ClkDividerN:u0|s_divCounter[26] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.576      ;
+; 0.452 ; ClkDividerN:u0|s_divCounter[27] ; ClkDividerN:u0|s_divCounter[28] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.576      ;
 ; 0.458 ; ClkDividerN:u0|s_divCounter[4]  ; ClkDividerN:u0|s_divCounter[5]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
-; 0.458 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.042      ; 0.584      ;
 ; 0.458 ; ClkDividerN:u0|s_divCounter[12] ; ClkDividerN:u0|s_divCounter[13] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
 ; 0.458 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[1]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
+; 0.458 ; ClkDividerN:u0|s_divCounter[2]  ; ClkDividerN:u0|s_divCounter[3]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.583      ;
+; 0.460 ; ClkDividerN:u0|s_divCounter[20] ; ClkDividerN:u0|s_divCounter[21] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.460 ; ClkDividerN:u0|s_divCounter[16] ; ClkDividerN:u0|s_divCounter[17] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.460 ; ClkDividerN:u0|s_divCounter[28] ; ClkDividerN:u0|s_divCounter[29] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.460 ; ClkDividerN:u0|s_divCounter[26] ; ClkDividerN:u0|s_divCounter[27] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.584      ;
+; 0.461 ; Fase1FSM:u3|epro                ; Display:u1|visor_mil[0]         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.043      ; 0.588      ;
+; 0.461 ; ClkDividerN:u0|s_divCounter[10] ; ClkDividerN:u0|s_divCounter[12] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.586      ;
+; 0.461 ; ClkDividerN:u0|s_divCounter[6]  ; ClkDividerN:u0|s_divCounter[7]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.586      ;
+; 0.461 ; ClkDividerN:u0|s_divCounter[24] ; ClkDividerN:u0|s_divCounter[25] ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.040      ; 0.585      ;
+; 0.461 ; ClkDividerN:u0|s_divCounter[0]  ; ClkDividerN:u0|s_divCounter[2]  ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.041      ; 0.586      ;
 +-------+---------------------------------+---------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -931,10 +931,10 @@ No synchronizer chains to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -3.509   ; 0.173 ; N/A      ; N/A     ; -3.000              ;
-;  CLOCK_50        ; -3.509   ; 0.173 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -224.976 ; 0.0   ; 0.0      ; 0.0     ; -143.065            ;
-;  CLOCK_50        ; -224.976 ; 0.000 ; N/A      ; N/A     ; -143.065            ;
+; Worst-case Slack ; -3.718   ; 0.180 ; N/A      ; N/A     ; -3.000              ;
+;  CLOCK_50        ; -3.718   ; 0.180 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -238.652 ; 0.0   ; 0.0      ; 0.0     ; -143.065            ;
+;  CLOCK_50        ; -238.652 ; 0.000 ; N/A      ; N/A     ; -143.065            ;
 +------------------+----------+-------+----------+---------+---------------------+
 
 
@@ -1273,8 +1273,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 4     ; 4    ;
 ; Unconstrained Input Port Paths  ; 49    ; 49   ;
-; Unconstrained Output Ports      ; 33    ; 33   ;
-; Unconstrained Output Port Paths ; 41    ; 41   ;
+; Unconstrained Output Ports      ; 30    ; 30   ;
+; Unconstrained Output Port Paths ; 30    ; 30   ;
 +---------------------------------+-------+------+
 
 
@@ -1332,9 +1332,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDG[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -1385,9 +1382,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; HEX3[4]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[5]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; HEX3[6]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[1]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; LEDG[2]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDG[7]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; LEDR[0]     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
@@ -1399,7 +1393,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 14 18:01:50 2021
+    Info: Processing started: Wed Jun 16 11:19:50 2021
 Info: Command: quartus_sta ProjFinalFase1 -c ProjFinalFase1
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -1416,14 +1410,14 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.509
+Info (332146): Worst-case setup slack is -3.718
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.509            -224.976 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.385
+    Info (332119):    -3.718            -238.652 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.402
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.385               0.000 CLOCK_50 
+    Info (332119):     0.402               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1436,14 +1430,14 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -3.117
+Info (332146): Worst-case setup slack is -3.306
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.117            -195.156 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.338
+    Info (332119):    -3.306            -206.691 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.353
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.338               0.000 CLOCK_50 
+    Info (332119):     0.353               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -1454,26 +1448,26 @@ Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -1.228
+Info (332146): Worst-case setup slack is -1.272
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.228             -59.945 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.173
+    Info (332119):    -1.272             -68.264 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.180
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.173               0.000 CLOCK_50 
+    Info (332119):     0.180               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -118.829 CLOCK_50 
+    Info (332119):    -3.000            -118.828 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Mon Jun 14 18:01:54 2021
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Wed Jun 16 11:19:52 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 

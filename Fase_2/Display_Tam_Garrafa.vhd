@@ -55,10 +55,10 @@ begin
 				visor_cen <= N0;
 				visor_mil <= N1;
 			else
-				visor_uni <= (others => '-');
-				visor_dez <= (others => '-');
-				visor_cen <= (others => '-');
-				visor_mil <= (others => '-');
+				visor_uni <= (others => '1');
+				visor_dez <= (others => '1');
+				visor_cen <= (others => '1');
+				visor_mil <= (others => '1');
 			end if;
 		end if;
 	end process;

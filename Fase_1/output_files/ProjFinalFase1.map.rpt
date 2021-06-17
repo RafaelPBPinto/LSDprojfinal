@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjFinalFase1
-Mon Jun 14 18:01:17 2021
+Wed Jun 16 11:19:31 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -46,13 +46,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 14 18:01:17 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 16 11:19:31 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ProjFinalFase1                              ;
 ; Top-level Entity Name              ; Fase1                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 189                                         ;
-;     Total combinational functions  ; 171                                         ;
+; Total logic elements               ; 186                                         ;
+;     Total combinational functions  ; 168                                         ;
 ;     Dedicated logic registers      ; 109                                         ;
 ; Total registers                    ; 109                                         ;
 ; Total pins                         ; 78                                          ;
@@ -184,16 +184,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 189            ;
+; Estimated Total logic elements              ; 186            ;
 ;                                             ;                ;
-; Total combinational functions               ; 171            ;
+; Total combinational functions               ; 168            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 42             ;
-;     -- 3 input functions                    ; 50             ;
+;     -- 4 input functions                    ; 40             ;
+;     -- 3 input functions                    ; 49             ;
 ;     -- <=2 input functions                  ; 79             ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 110            ;
+;     -- normal mode                          ; 107            ;
 ;     -- arithmetic mode                      ; 61             ;
 ;                                             ;                ;
 ; Total registers                             ; 109            ;
@@ -206,8 +206,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 109            ;
-; Total fan-out                               ; 852            ;
-; Average fan-out                             ; 1.95           ;
+; Total fan-out                               ; 838            ;
+; Average fan-out                             ; 1.94           ;
 +---------------------------------------------+----------------+
 
 
@@ -216,10 +216,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
-; |Fase1                     ; 171 (0)             ; 109 (3)                   ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |Fase1                ; Fase1       ; work         ;
+; |Fase1                     ; 168 (0)             ; 109 (3)                   ; 0           ; 0            ; 0       ; 0         ; 78   ; 0            ; |Fase1                ; Fase1       ; work         ;
 ;    |ClkDividerN:u0|        ; 55 (55)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|ClkDividerN:u0 ; ClkDividerN ; work         ;
 ;    |Display:u1|            ; 16 (16)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|Display:u1     ; Display     ; work         ;
-;    |Fase1FSM:u3|           ; 23 (23)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|Fase1FSM:u3    ; Fase1FSM    ; work         ;
+;    |Fase1FSM:u3|           ; 20 (20)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|Fase1FSM:u3    ; Fase1FSM    ; work         ;
 ;    |TimerFSM:u2|           ; 77 (77)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Fase1|TimerFSM:u2    ; TimerFSM    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -246,8 +246,9 @@ Encoding Type:  One-Hot
 +---------------------------------------+----------------------------------------+
 ; Register name                         ; Reason for Removal                     ;
 +---------------------------------------+----------------------------------------+
+; Fase1FSM:u3|timeVal[0]                ; Stuck at GND due to stuck port data_in ;
 ; Fase1FSM:u3|timeVal[2]                ; Stuck at VCC due to stuck port data_in ;
-; Fase1FSM:u3|timeVal[0,3..7]           ; Stuck at GND due to stuck port data_in ;
+; Fase1FSM:u3|timeVal[3..7]             ; Stuck at GND due to stuck port data_in ;
 ; Total Number of Removed Registers = 7 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
@@ -273,9 +274,9 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |Fase1|Display:u1|visor_cen[6]   ;
-; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |Fase1|TimerFSM:u2|s_counter[7]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Fase1|TimerFSM:u2|s_counter[28] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Fase1|Display:u1|visor_uni      ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |Fase1|TimerFSM:u2|s_counter[16] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |Fase1|TimerFSM:u2|s_counter[25] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Fase1|Display:u1|visor_dez      ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; No         ; |Fase1|Fase1FSM:u3|s_state       ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |Fase1|Fase1FSM:u3|s_state       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
@@ -302,18 +303,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 8                           ;
 ;     SCLR              ; 3                           ;
 ;     plain             ; 68                          ;
-; cycloneiii_lcell_comb ; 175                         ;
+; cycloneiii_lcell_comb ; 169                         ;
 ;     arith             ; 61                          ;
 ;         2 data inputs ; 61                          ;
-;     normal            ; 114                         ;
+;     normal            ; 108                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 5                           ;
+;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 16                          ;
-;         3 data inputs ; 50                          ;
-;         4 data inputs ; 42                          ;
+;         3 data inputs ; 49                          ;
+;         4 data inputs ; 40                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.10                        ;
-; Average LUT depth     ; 3.24                        ;
+; Average LUT depth     ; 3.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -332,7 +333,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jun 14 18:00:58 2021
+    Info: Processing started: Wed Jun 16 11:19:20 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -340,7 +341,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file fase1.v
     Info (12022): Found design unit 1: Fase1-shell File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 18
     Info (12023): Found entity 1: Fase1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file fase1fsm.vhd
-    Info (12022): Found design unit 1: Fase1FSM-v1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd Line: 22
+    Info (12022): Found design unit 1: Fase1FSM-v1 File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd Line: 21
     Info (12023): Found entity 1: Fase1FSM File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1FSM.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file timerfsm.vhd
     Info (12022): Found design unit 1: TimerFSM-Behavioral File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/TimerFSM.vhd Line: 13
@@ -354,7 +355,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file clkdivi
 Info (12127): Elaborating entity "Fase1" for the top level hierarchy
 Warning (10873): Using initial value X (don't care) for net "LEDR[17..1]" at Fase1.vhd(9) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
 Warning (10873): Using initial value X (don't care) for net "LEDG[8]" at Fase1.vhd(10) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
-Warning (10873): Using initial value X (don't care) for net "LEDG[6..4]" at Fase1.vhd(10) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
+Warning (10873): Using initial value X (don't care) for net "LEDG[6..0]" at Fase1.vhd(10) File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
 Info (12129): Elaborating entity "ClkDividerN" using architecture "A:rtl" for hierarchy "ClkDividerN:u0" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 29
 Info (12129): Elaborating entity "Display" using architecture "A:v1" for hierarchy "Display:u1" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 34
 Info (12129): Elaborating entity "TimerFSM" using architecture "A:behavioral" for hierarchy "TimerFSM:u2" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 47
@@ -377,6 +378,9 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
     Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
     Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 9
+    Warning (13410): Pin "LEDG[0]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
+    Warning (13410): Pin "LEDG[1]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
+    Warning (13410): Pin "LEDG[2]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
     Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
     Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
     Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 10
@@ -404,14 +408,14 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[1]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Fase1.vhd Line: 8
-Info (21057): Implemented 273 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 270 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 55 output pins
-    Info (21061): Implemented 195 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
-    Info: Peak virtual memory: 4786 megabytes
-    Info: Processing ended: Mon Jun 14 18:01:17 2021
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:43
+    Info (21061): Implemented 192 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
+    Info: Peak virtual memory: 4788 megabytes
+    Info: Processing ended: Wed Jun 16 11:19:31 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:23
 
 

@@ -63,8 +63,7 @@ u3:	entity work.Fase1FSM(v1)
 						agua				=> s_SW(16),
 						slar				=> s_SW(15),
 						ledr				=> LEDR(0),
-						ledg				=>	LEDG(7),
-						debug				=> LEDG(3 downto 0));
+						ledg				=>	LEDG(7));
 						
 		process(CLOCK_50)
 		begin

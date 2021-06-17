@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  16 JUN 2021 09:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  17 JUN 2021 16:37
 entering extended mode
 **./projfinalLSD.tex
 (projfinalLSD.tex
@@ -524,6 +524,18 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
+) (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage.sty
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks21
+\AP@partial=\box50
+\AP@footins=\box51
+) (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count425
+\float@exts=\toks22
+\float@box=\box52
+\@float@everytoks=\toks23
+\@floatcapt=\box53
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -533,29 +545,29 @@ Package csquotes Info: Redefining alias 'default' -> 'portuguese'.
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count425
-\l__pdf_internal_box=\box50
+\l__color_backend_stack_int=\count426
+\l__pdf_internal_box=\box54
 ) (projfinalLSD.aux)
 \openout1 = `projfinalLSD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 Package biblatex Info: Trying to load language 'portuguese'...
 Package biblatex Info: ... file 'portuguese.lbx' found.
 
@@ -590,9 +602,9 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'projfinalLSD.bbl' not found.
 
 No file projfinalLSD.bbl.
-Package biblatex Info: Reference section=0 on input line 16.
-Package biblatex Info: Reference segment=0 on input line 16.
-Package hyperref Info: Link coloring OFF on input line 16.
+Package biblatex Info: Reference section=0 on input line 24.
+Package biblatex Info: Reference segment=0 on input line 24.
+Package hyperref Info: Link coloring OFF on input line 24.
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -603,11 +615,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count426
+\c@section@level=\count427
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (projfinalLSD.out) (projfinalLSD.out)
 \@outlinefile=\write4
 \openout4 = `projfinalLSD.out'.
@@ -616,17 +628,17 @@ LaTeX Info: Redefining \nameref on input line 16.
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count427
+\scratchcounter=\count428
 \scratchdimen=\dimen146
-\scratchbox=\box51
-\nofMPsegments=\count428
-\nofMParguments=\count429
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count430
+\scratchbox=\box55
+\nofMPsegments=\count429
+\nofMParguments=\count430
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count431
 \MPscratchDim=\dimen147
-\MPnumerator=\count431
-\makeMPintoPDFobject=\count432
-\everyMPtoPDFconversion=\toks22
+\MPnumerator=\count432
+\makeMPintoPDFobject=\count433
+\everyMPtoPDFconversion=\toks25
 )
 (C:\Users\rafae\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -638,25 +650,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-<ua.pdf, id=27, 52.195pt x 55.20625pt>
+<ua.pdf, id=75, 52.195pt x 55.20625pt>
 File: ua.pdf Graphic file (type pdf)
 <use ua.pdf>
-Package pdftex.def Info: ua.pdf  used on input line 52.
+Package pdftex.def Info: ua.pdf  used on input line 60.
 (pdftex.def)             Requested size: 52.19487pt x 55.2061pt.
  [1
 
 {C:/Users/rafae/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./ua.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 77.
+(Font)              <12> on input line 85.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 77.
+(Font)              <8> on input line 85.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 77.
+(Font)              <6> on input line 85.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 
+l.85 
       [1] (projfinalLSD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 8.
@@ -672,66 +684,257 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Cap\'{\i }tulo 1.
 Package acronym Info: Label `acro:vhdl' newly defined as it shall be overridden
 
-although it is yet undefined on input line 93.
+although it is yet undefined on input line 101.
 Package acronym Info: Label `acro:fpga' newly defined as it shall be overridden
 
-although it is yet undefined on input line 93.
+although it is yet undefined on input line 101.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \chapter
-             {Arquitetura} [1
+l.107 \chapter
+              {Arquitetura} [1
 
 
 ]
 Cap\'{\i }tulo 2.
-<Fase1Estrutura.png, id=72, 1199.23032pt x 632.3625pt>
+<Fase1Estrutura.png, id=133, 1209.01688pt x 497.60907pt>
 File: Fase1Estrutura.png Graphic file (type png)
 <use Fase1Estrutura.png>
-Package pdftex.def Info: Fase1Estrutura.png  used on input line 105.
-(pdftex.def)             Requested size: 284.52756pt x 150.03326pt.
+Package pdftex.def Info: Fase1Estrutura.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 141.99469pt.
 [2
 
- <./Fase1Estrutura.png>]
-Cap\'{\i }tulo 3.
-[3
-
 ]
-Cap\'{\i }tulo 4.
+<ArquiteturaFase2.png, id=142, 1208.26407pt x 602.25pt>
+File: ArquiteturaFase2.png Graphic file (type png)
+<use ArquiteturaFase2.png>
+Package pdftex.def Info: ArquiteturaFase2.png  used on input line 140.
+(pdftex.def)             Requested size: 312.9803pt x 156.00235pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.147 \chapter
+              {Implementação}pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.147 \chapter
+              {Implementação} <./Fase1Estrutura.png> <./ArquiteturaFase2.png>
+]
+Cap\'{\i }tulo 3.
 [4
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.176 
+      ]
+<Fase1FSMentity.png, id=159, 611.28375pt x 204.01219pt>
+File: Fase1FSMentity.png Graphic file (type png)
+<use Fase1FSMentity.png>
+Package pdftex.def Info: Fase1FSMentity.png  used on input line 181.
+(pdftex.def)             Requested size: 284.52756pt x 94.95807pt.
+<Time.png, id=160, 615.0478pt x 120.45pt>
+File: Time.png Graphic file (type png)
+<use Time.png>
+Package pdftex.def Info: Time.png  used on input line 188.
+(pdftex.def)             Requested size: 284.52756pt x 55.72194pt.
+<Fase1FSM.png, id=161, 543.53062pt x 633.11531pt>
+File: Fase1FSM.png Graphic file (type png)
+<use Fase1FSM.png>
+Package pdftex.def Info: Fase1FSM.png  used on input line 195.
+(pdftex.def)             Requested size: 199.16928pt x 231.99808pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.199 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.199 
+       <./Fase1FSMentity.png> <./Time.png>]
+<Fase1FSME3.png, id=170, 548.0475pt x 204.01219pt>
+File: Fase1FSME3.png Graphic file (type png)
+<use Fase1FSME3.png>
+Package pdftex.def Info: Fase1FSME3.png  used on input line 202.
+(pdftex.def)             Requested size: 199.16928pt x 74.14163pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.207 \newpage
+               <./Fase1FSM.png> <./Fase1FSME3.png>]
+<Display1entity.png, id=179, 481.04718pt x 179.16937pt>
+File: Display1entity.png Graphic file (type png)
+<use Display1entity.png>
+Package pdftex.def Info: Display1entity.png  used on input line 214.
+(pdftex.def)             Requested size: 284.52756pt x 105.97693pt.
+<DisplayLetras.png, id=182, 491.58656pt x 264.99pt>
+File: DisplayLetras.png Graphic file (type png)
+<use DisplayLetras.png>
+Package pdftex.def Info: DisplayLetras.png  used on input line 223.
+(pdftex.def)             Requested size: 284.52756pt x 153.3789pt.
+<Displayprocess.png, id=183, 501.37312pt x 590.205pt>
+File: Displayprocess.png Graphic file (type png)
+<use Displayprocess.png>
+Package pdftex.def Info: Displayprocess.png  used on input line 230.
+(pdftex.def)             Requested size: 284.52756pt x 334.9524pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.234 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.234 
+       <./Display1entity.png> <./DisplayLetras.png>] [8pdfTeX warning (ext4): d
+estination with the same identifier (name{figure.3.7}) has been already used, d
+uplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.235 \newpage
+               <./Displayprocess.png>]
+<Clockdivider.png, id=200, 512.66531pt x 384.6872pt>
+File: Clockdivider.png Graphic file (type png)
+<use Clockdivider.png>
+Package pdftex.def Info: Clockdivider.png  used on input line 243.
+(pdftex.def)             Requested size: 284.52756pt x 213.49805pt.
+<TimerFSM.png, id=202, 490.08093pt x 519.44063pt>
+File: TimerFSM.png Graphic file (type png)
+<use TimerFSM.png>
+Package pdftex.def Info: TimerFSM.png  used on input line 252.
+(pdftex.def)             Requested size: 284.52756pt x 301.57697pt.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.256 
+       <./Clockdivider.png>] [10pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.3.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.257 \newpage
+               <./TimerFSM.png>]
+<Fase1TopLevelSWs.png, id=220, 324.46219pt x 121.20282pt>
+File: Fase1TopLevelSWs.png Graphic file (type png)
+<use Fase1TopLevelSWs.png>
+Package pdftex.def Info: Fase1TopLevelSWs.png  used on input line 272.
+(pdftex.def)             Requested size: 284.52756pt x 106.29262pt.
+<Fase1TopLevelSHELL.png, id=221, 429.10312pt x 650.43pt>
+File: Fase1TopLevelSHELL.png Graphic file (type png)
+<use Fase1TopLevelSHELL.png>
+Package pdftex.def Info: Fase1TopLevelSHELL.png  used on input line 279.
+(pdftex.def)             Requested size: 284.52756pt x 431.28992pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.283 
+       <./Fase1TopLevelSWs.png>] [12pdfTeX warning (ext4): destination with the
+ same identifier (name{figure.3.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.284 \newpage
+               <./Fase1TopLevelSHELL.png>]
+<Fase2FSM.png, id=237, 674.52pt x 392.21532pt>
+File: Fase2FSM.png Graphic file (type png)
+<use Fase2FSM.png>
+Package pdftex.def Info: Fase2FSM.png  used on input line 295.
+(pdftex.def)             Requested size: 284.52756pt x 165.44746pt.
+<SelFSM.png, id=238, 328.97906pt x 617.30624pt>
+File: SelFSM.png Graphic file (type png)
+<use SelFSM.png>
+Package pdftex.def Info: SelFSM.png  used on input line 308.
+(pdftex.def)             Requested size: 284.52756pt x 533.90604pt.
+ [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.312 
+       <./Fase2FSM.png>]
+Overfull \vbox (7.85pt too high) has occurred while \output is active []
+
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+13}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.312 
+       <./SelFSM.png>]
+<Debounce.png, id=251, 599.23875pt x 667.74469pt>
+File: Debounce.png Graphic file (type png)
+<use Debounce.png>
+Package pdftex.def Info: Debounce.png  used on input line 321.
+(pdftex.def)             Requested size: 284.52756pt x 317.05975pt.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.326 \newpage
+               <./Debounce.png>]
+<DisplayFase2.png, id=258, 527.72156pt x 670.00313pt>
+File: DisplayFase2.png Graphic file (type png)
+<use DisplayFase2.png>
+Package pdftex.def Info: DisplayFase2.png  used on input line 334.
+(pdftex.def)             Requested size: 284.52756pt x 361.23401pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+15}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.338 \newpage
+               <./DisplayFase2.png>]
+<signalsf2.png, id=267, 232.61906pt x 64.74188pt>
+File: signalsf2.png Graphic file (type png)
+<use signalsf2.png>
+Package pdftex.def Info: signalsf2.png  used on input line 350.
+(pdftex.def)             Requested size: 142.26378pt x 39.59521pt.
+<TopLevelF2.png, id=268, 548.0475pt x 328.97906pt>
+File: TopLevelF2.png Graphic file (type png)
+<use TopLevelF2.png>
+Package pdftex.def Info: TopLevelF2.png  used on input line 357.
+(pdftex.def)             Requested size: 284.52756pt x 170.79903pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+16}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.362 \chapter
+              {Validação}pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.3.17}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.362 \chapter
+              {Validação} <./signalsf2.png> <./TopLevelF2.png>]
+Cap\'{\i }tulo 4.
+[18
 
 ]
 Cap\'{\i }tulo 5.
-[5
+[19
 
 ]
 Cap\'{\i }tulo 6.
-[6
+[20
 
-] [7
+] [21
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 148.
+LaTeX Warning: Empty bibliography on input line 393.
 
-[8
+[22
 
 ] (projfinalLSD.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `projfinalLSD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `projfinalLSD.out':
-(rerunfilecheck)             Before: 362B5B9B8DAF7E69EED85A0A1811B7F2;666
-(rerunfilecheck)             After:  79581E3F44611B59C800A8696929B38B;650.
+Package rerunfilecheck Info: File `projfinalLSD.out' has not changed.
+(rerunfilecheck)             Checksum: 213DB4804192386AF7988A8F16B49813;2383.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                projfinalLSD
@@ -742,29 +945,29 @@ Package logreq Info: Writing requests to 'projfinalLSD.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17286 strings out of 478864
- 294091 string characters out of 2848660
- 1045596 words of memory out of 3000000
- 34980 multiletter control sequences out of 15000+600000
- 413787 words of font info for 46 fonts, out of 8000000 for 9000
+ 17590 strings out of 478864
+ 299028 string characters out of 2848660
+ 1051530 words of memory out of 3000000
+ 35213 multiletter control sequences out of 15000+600000
+ 416037 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,66p,1056b,1659s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.2.0.1} has been referenced but does no
-t exist, replaced by a fixed one
-
- <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti10
-00.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecbx2074.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecbx1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
-n/ec/dpi600\ecrm1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecbx2488.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/lj
-four/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts
-/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\rafae\AppData\Local\MiKTeX
-\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\rafae\AppData\Local\
-MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk>
-Output written on projfinalLSD.pdf (11 pages, 147199 bytes).
+ 60i,6n,66p,1056b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
+1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbx1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx2074.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rafae\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rafae\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rafae\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\rafae\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\
+rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk>
+Output written on projfinalLSD.pdf (25 pages, 636270 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 729 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
