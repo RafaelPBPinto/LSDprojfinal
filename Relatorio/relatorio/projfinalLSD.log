@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  17 JUN 2021 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  18 JUN 2021 11:00
 entering extended mode
 **./projfinalLSD.tex
 (projfinalLSD.tex
@@ -827,11 +827,11 @@ File: Fase1TopLevelSWs.png Graphic file (type png)
 <use Fase1TopLevelSWs.png>
 Package pdftex.def Info: Fase1TopLevelSWs.png  used on input line 272.
 (pdftex.def)             Requested size: 284.52756pt x 106.29262pt.
-<Fase1TopLevelSHELL.png, id=221, 429.10312pt x 650.43pt>
+<Fase1TopLevelSHELL.png, id=221, 566.86781pt x 642.14906pt>
 File: Fase1TopLevelSHELL.png Graphic file (type png)
 <use Fase1TopLevelSHELL.png>
 Package pdftex.def Info: Fase1TopLevelSHELL.png  used on input line 279.
-(pdftex.def)             Requested size: 284.52756pt x 431.28992pt.
+(pdftex.def)             Requested size: 284.52756pt x 322.31813pt.
  [11pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 10}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -915,6 +915,12 @@ Cap\'{\i }tulo 4.
 
 ]
 Cap\'{\i }tulo 5.
+
+Overfull \hbox (5.43472pt too wide) in paragraph at lines 370--371
+[]\T1/cmr/m/n/10 Passados os qua-tro se-gun-dos, nos \T1/cmr/m/it/10 dis-plays\
+T1/cmr/m/n/10 , apa-re-cerá a men-sa-gem "EPRO"que
+ []
+
 [19
 
 ]
@@ -925,7 +931,7 @@ Cap\'{\i }tulo 6.
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 393.
+LaTeX Warning: Empty bibliography on input line 416.
 
 [22
 
@@ -945,29 +951,31 @@ Package logreq Info: Writing requests to 'projfinalLSD.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17590 strings out of 478864
- 299028 string characters out of 2848660
+ 17595 strings out of 478864
+ 299095 string characters out of 2848660
  1051530 words of memory out of 3000000
- 35213 multiletter control sequences out of 15000+600000
- 416037 words of font info for 49 fonts, out of 8000000 for 9000
+ 35217 multiletter control sequences out of 15000+600000
+ 416372 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,66p,1056b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
- <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi
-1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx2074.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rafae\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rafae\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rafae\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\rafae\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\
-rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk>
-Output written on projfinalLSD.pdf (25 pages, 636270 bytes).
+ <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecbi1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1200.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecbx1440.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\rafae\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\rafae\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\rafae\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\rafae\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\rafae\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\
+rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\
+Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk
+>
+Output written on projfinalLSD.pdf (25 pages, 649031 bytes).
 PDF statistics:
- 729 PDF objects out of 1000 (max. 8388607)
+ 737 PDF objects out of 1000 (max. 8388607)
  68 named destinations out of 1000 (max. 500000)
  245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
