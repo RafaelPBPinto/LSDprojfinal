@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1 --vector_source="C:/LSD/ProjFinal/LSDprojfinal/Fase_1/TEST1.vwf" --testbench_file="C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/TEST1.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1 --vector_source="C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Test1.vwf" --testbench_file="C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/Test1.vwf.vht"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Jun 09 18:33:47 2021
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1 --vector_source=C:/LSD/ProjFinal/LSDprojfinal/Fase_1/TEST1.vwf --testbench_file=C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/TEST1.vwf.vht
+    Info: Processing started: Fri Jun 18 15:36:47 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1 --vector_source=C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Test1.vwf --testbench_file=C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/Test1.vwf.vht
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
  "HEX3" in vector source file when writing test bench files
@@ -53,13 +53,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Jun 09 18:33:49 2021
+    Info: Processing started: Fri Jun 18 15:36:48 2021
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/ ProjFinalFase1 -c ProjFinalFase1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ProjFinalFase1.vho in folder "C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4637 megabytes
-    Info: Processing ended: Wed Jun 09 18:33:50 2021
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Fri Jun 18 15:36:49 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -77,22 +77,20 @@ C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vsim -c -do ProjFinalFase1.do
 
 Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
 
 
 # do ProjFinalFase1.do
+# ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:33:55 on Jun 09,2021
+# Start time: 15:36:51 on Jun 18,2021
 # vcom -work work ProjFinalFase1.vho 
-
 # -- Loading package STANDARD
 
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package VITAL_Timing
-
 # -- Loading package VITAL_Primitives
 # -- Loading package cycloneive_atom_pack
 # -- Loading package cycloneive_components
@@ -104,22 +102,22 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # -- Compiling entity Fase1
 # -- Compiling architecture structure of Fase1
 
-# End time: 18:33:56 on Jun 09,2021, Elapsed time: 0:00:01
+# End time: 15:36:51 on Jun 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:33:56 on Jun 09,2021
-# vcom -work work TEST1.vwf.vht 
+# Start time: 15:36:51 on Jun 18,2021
+# vcom -work work Test1.vwf.vht 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Fase1_vhd_vec_tst
 # -- Compiling architecture Fase1_arch of Fase1_vhd_vec_tst
-
-# End time: 18:33:56 on Jun 09,2021, Elapsed time: 0:00:00
+# End time: 15:36:51 on Jun 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Fase1_vhd_vec_tst 
-# Start time: 18:33:57 on Jun 09,2021
+# Start time: 15:36:52 on Jun 18,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -137,26 +135,26 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive.cycloneive_io_ibuf(arch)
 # Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
 # Loading cycloneive.cycloneive_ena_reg(behave)
-# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # Loading altera.dffeas(vital_dffeas)
-# ** Warning: Design size of 29192 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# ** Warning: Design size of 43434 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-# after#33
+# after#35
 
-# End time: 18:33:58 on Jun 09,2021, Elapsed time: 0:00:01
+# End time: 15:36:53 on Jun 18,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/LSD/ProjFinal/LSDprojfinal/Fase_1/TEST1.vwf...
+Reading C:/LSD/ProjFinal/LSDprojfinal/Fase_1/Test1.vwf...
 
 Reading C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/ProjFinalFase1.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/ProjFinalFase1_20210609183358.sim.vwf
+Writing the resulting VWF to C:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim/ProjFinalFase1_20210618153654.sim.vwf
 
 Finished VCD to VWF conversion.
 

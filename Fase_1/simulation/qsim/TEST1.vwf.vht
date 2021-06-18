@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "06/09/2021 18:33:48"
+-- Generated on "06/18/2021 15:36:48"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          Fase1
 -- 
@@ -39,7 +39,7 @@ SIGNAL HEX1 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX2 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL HEX3 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY : STD_LOGIC_VECTOR(3 DOWNTO 0);
-SIGNAL LEDG : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL LEDG : STD_LOGIC_VECTOR(8 DOWNTO 0);
 SIGNAL LEDR : STD_LOGIC_VECTOR(17 DOWNTO 0);
 SIGNAL SW : STD_LOGIC_VECTOR(17 DOWNTO 0);
 COMPONENT Fase1
@@ -50,7 +50,7 @@ COMPONENT Fase1
 	HEX2 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	HEX3 : BUFFER STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-	LEDG : BUFFER STD_LOGIC_VECTOR(7 DOWNTO 0);
+	LEDG : BUFFER STD_LOGIC_VECTOR(8 DOWNTO 0);
 	LEDR : BUFFER STD_LOGIC_VECTOR(17 DOWNTO 0);
 	SW : IN STD_LOGIC_VECTOR(17 DOWNTO 0)
 	);
@@ -75,9 +75,9 @@ t_prcs_CLOCK_50: PROCESS
 BEGIN
 LOOP
 	CLOCK_50 <= '0';
-	WAIT FOR 50000 ps;
+	WAIT FOR 5000 ps;
 	CLOCK_50 <= '1';
-	WAIT FOR 50000 ps;
+	WAIT FOR 5000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_CLOCK_50;
@@ -103,14 +103,16 @@ END PROCESS t_prcs_KEY_1;
 t_prcs_KEY_0: PROCESS
 BEGIN
 	KEY(0) <= '0';
+	WAIT FOR 110000 ps;
+	KEY(0) <= '1';
+	WAIT FOR 50000 ps;
+	KEY(0) <= '0';
 WAIT;
 END PROCESS t_prcs_KEY_0;
 -- SW[17]
 t_prcs_SW_17: PROCESS
 BEGIN
 	SW(17) <= '0';
-	WAIT FOR 690000 ps;
-	SW(17) <= '1';
 WAIT;
 END PROCESS t_prcs_SW_17;
 -- SW[16]

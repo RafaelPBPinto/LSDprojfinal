@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ProjFinalFase1
-Wed Jun 16 11:19:31 2021
+Fri Jun 18 15:23:34 2021
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 16 11:19:31 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 18 15:23:34 2021       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; ProjFinalFase1                              ;
 ; Top-level Entity Name              ; Fase1                                       ;
@@ -323,7 +323,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -333,7 +333,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Jun 16 11:19:20 2021
+    Info: Processing started: Fri Jun 18 15:23:10 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjFinalFase1 -c ProjFinalFase1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -414,8 +414,8 @@ Info (21057): Implemented 270 device resources after synthesis - the final resou
     Info (21061): Implemented 192 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
     Info: Peak virtual memory: 4788 megabytes
-    Info: Processing ended: Wed Jun 16 11:19:31 2021
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Processing ended: Fri Jun 18 15:23:34 2021
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:50
 
 

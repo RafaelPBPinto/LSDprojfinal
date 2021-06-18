@@ -158,7 +158,7 @@ Primeiramente, desenhou-se a máquina de estados que se iria implementar na fase
 
 \begin{figure}[H]
     \centering
-    %\includegraphics[width = \textwidth]{Fase1Estrutura.png}
+    \includegraphics[width = \textwidth]{FSM1.png}
     \caption{Máquina de estados utilizada na Fase 1}
     \label{fig:Fase1FSM}
 \end{figure}
@@ -297,11 +297,25 @@ A máquina só avança para o novo estado implementado, na figura \ref{fig:FSMFa
     \label{fig:FSMFase2}
 \end{figure}
 
-Para a máquina de estados implementada para fazer a seleção de bebida definiu-se três \textit{inputs}: \textit{sel} que é o sinal enviado pelo \textit{DebounceUnit} implementado posteriormente, \textit{reset} e o \textit{clk} que permite fazer tudo num processo síncrono. E definiu-se quatro \textit{outputs}: \textit{b33cl\textunderscore d, b25cl\textunderscore d, b50cl\textunderscore d e b10dl\textunderscore d} que servem para ativar a quantidade de bebida representada nos \textit{displays}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \textwidth]{FSM2.png}
+    \caption{Máquina de estados utilizada na Fase 2}
+    \label{fig:Fase2FSM}
+\end{figure}
+
+Para a máquina de estados implementada para fazer a seleção do tamanho da garrafa (figura \ref{fig:SelFSM}) definiu-se três \textit{inputs}: \textit{sel} que é o sinal enviado pelo \textit{DebounceUnit} implementado posteriormente, \textit{reset} e o \textit{clk} que permite fazer tudo num processo síncrono. E definiu-se quatro \textit{outputs}: \textit{b33cl\textunderscore d, b25cl\textunderscore d, b50cl\textunderscore d e b10dl\textunderscore d} que servem para ativar a quantidade de bebida representada nos \textit{displays}.
 
 Para que a máquina avance de estado é necessário receber um sinal do \textit{DebounceUnit} (\textit{sel}). Por defeito a máquina está configurada para estar no estado 33cl.
 
 Cada vez que há um reset a máquina volta ao estado de 33cl.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 10cm]{FSMSel.png}
+    \caption{Máquina de estados da seleção da garrafa}
+    \label{fig:SelFSM}
+\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -385,19 +399,16 @@ O utilizador pode ainda entrar no modo "Modo Escolha tamanho das garrafas", onde
 
 Para que a máquina volte ao estado inicial é só pressionar a \textit{key} 0.
 
- 
-
-
-
 \chapter{Conclusões}
 \label{chap.conclusao}
-Apresenta conclusões.
+Em suma, pode-se afirmar que o projeto cumpre com as especificações e requisitos definidos. Obteve-se uma máquina totalmente funcional, em que é possível escolher a bebida pretendida, bem como o tamanho da garrafa desejado. 
+
+Este projeto permitiu-nos perceber melhor como funcionam os sistemas digitais, principalmente a linguagem \ac{vhdl} que foi usada para modelar o comportamento e a estrutura de tais sistemas. É de salientar que as temáticas abordadas neste projeto são bastante relevantes não só para o nosso percurso académico mas também para uma futura vida profissional.
+
+Sistemas digitais estão presentes em todas as máquinas que nos rodeiam, pelo que o ser humano, mesmo sem se aperceber, se tornou dependente de tais sistemas. Dito isto, achamos que é de extrema importância perceber como os sistemas digitais funcionam e este trabalho ajudou-nos nesse sentido.
 
 \chapter*{Contribuições dos autores}
-Resumir aqui o que cada autor fez no trabalho.
-Usar abreviaturas para identificar os autores,
-por exemplo AS para António Silva.
-No fim indicar a percentagem de contribuição de cada autor.
+Este trabalho foi realizado por Guilherme Craveiro (GC) e Rafael Pinto (RP), alunos do primeiro ano do \ac{miect}. Cada um dos autores participou ativamente e de forma conjunta neste trabalho de aprofundamento, permitindo afirmar que tanto o autor GC como o autor RP contribuíram 50\% cada para o aspeto final deste projeto. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{Acrónimos}

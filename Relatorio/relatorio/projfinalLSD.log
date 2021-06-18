@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  18 JUN 2021 11:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.6.12)  18 JUN 2021 16:09
 entering extended mode
 **./projfinalLSD.tex
 (projfinalLSD.tex
@@ -724,25 +724,30 @@ l.147 \chapter
               {Implementação} <./Fase1Estrutura.png> <./ArquiteturaFase2.png>
 ]
 Cap\'{\i }tulo 3.
+<FSM1.png, id=151, 897.3525pt x 375.65344pt>
+File: FSM1.png Graphic file (type png)
+<use FSM1.png>
+Package pdftex.def Info: FSM1.png  used on input line 161.
+(pdftex.def)             Requested size: 345.0pt x 144.42352pt.
 [4
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.176 
-      ]
-<Fase1FSMentity.png, id=159, 611.28375pt x 204.01219pt>
+l.167 
+       <./FSM1.png>]
+<Fase1FSMentity.png, id=161, 611.28375pt x 204.01219pt>
 File: Fase1FSMentity.png Graphic file (type png)
 <use Fase1FSMentity.png>
 Package pdftex.def Info: Fase1FSMentity.png  used on input line 181.
 (pdftex.def)             Requested size: 284.52756pt x 94.95807pt.
-<Time.png, id=160, 615.0478pt x 120.45pt>
+<Time.png, id=162, 615.0478pt x 120.45pt>
 File: Time.png Graphic file (type png)
 <use Time.png>
 Package pdftex.def Info: Time.png  used on input line 188.
 (pdftex.def)             Requested size: 284.52756pt x 55.72194pt.
-<Fase1FSM.png, id=161, 543.53062pt x 633.11531pt>
+<Fase1FSM.png, id=163, 543.53062pt x 633.11531pt>
 File: Fase1FSM.png Graphic file (type png)
 <use Fase1FSM.png>
 Package pdftex.def Info: Fase1FSM.png  used on input line 195.
@@ -758,7 +763,7 @@ l.199
                                                   \__shipout_drop_firstpage_...
 l.199 
        <./Fase1FSMentity.png> <./Time.png>]
-<Fase1FSME3.png, id=170, 548.0475pt x 204.01219pt>
+<Fase1FSME3.png, id=172, 548.0475pt x 204.01219pt>
 File: Fase1FSME3.png Graphic file (type png)
 <use Fase1FSME3.png>
 Package pdftex.def Info: Fase1FSME3.png  used on input line 202.
@@ -769,17 +774,17 @@ Package pdftex.def Info: Fase1FSME3.png  used on input line 202.
                                                   \__shipout_drop_firstpage_...
 l.207 \newpage
                <./Fase1FSM.png> <./Fase1FSME3.png>]
-<Display1entity.png, id=179, 481.04718pt x 179.16937pt>
+<Display1entity.png, id=181, 481.04718pt x 179.16937pt>
 File: Display1entity.png Graphic file (type png)
 <use Display1entity.png>
 Package pdftex.def Info: Display1entity.png  used on input line 214.
 (pdftex.def)             Requested size: 284.52756pt x 105.97693pt.
-<DisplayLetras.png, id=182, 491.58656pt x 264.99pt>
+<DisplayLetras.png, id=184, 491.58656pt x 264.99pt>
 File: DisplayLetras.png Graphic file (type png)
 <use DisplayLetras.png>
 Package pdftex.def Info: DisplayLetras.png  used on input line 223.
 (pdftex.def)             Requested size: 284.52756pt x 153.3789pt.
-<Displayprocess.png, id=183, 501.37312pt x 590.205pt>
+<Displayprocess.png, id=185, 501.37312pt x 590.205pt>
 File: Displayprocess.png Graphic file (type png)
 <use Displayprocess.png>
 Package pdftex.def Info: Displayprocess.png  used on input line 230.
@@ -801,12 +806,12 @@ uplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.235 \newpage
                <./Displayprocess.png>]
-<Clockdivider.png, id=200, 512.66531pt x 384.6872pt>
+<Clockdivider.png, id=202, 512.66531pt x 384.6872pt>
 File: Clockdivider.png Graphic file (type png)
 <use Clockdivider.png>
 Package pdftex.def Info: Clockdivider.png  used on input line 243.
 (pdftex.def)             Requested size: 284.52756pt x 213.49805pt.
-<TimerFSM.png, id=202, 490.08093pt x 519.44063pt>
+<TimerFSM.png, id=204, 490.08093pt x 519.44063pt>
 File: TimerFSM.png Graphic file (type png)
 <use TimerFSM.png>
 Package pdftex.def Info: TimerFSM.png  used on input line 252.
@@ -822,12 +827,12 @@ e identifier (name{figure.3.9}) has been already used, duplicate ignored
                                                   \__shipout_drop_firstpage_...
 l.257 \newpage
                <./TimerFSM.png>]
-<Fase1TopLevelSWs.png, id=220, 324.46219pt x 121.20282pt>
+<Fase1TopLevelSWs.png, id=222, 324.46219pt x 121.20282pt>
 File: Fase1TopLevelSWs.png Graphic file (type png)
 <use Fase1TopLevelSWs.png>
 Package pdftex.def Info: Fase1TopLevelSWs.png  used on input line 272.
 (pdftex.def)             Requested size: 284.52756pt x 106.29262pt.
-<Fase1TopLevelSHELL.png, id=221, 566.86781pt x 642.14906pt>
+<Fase1TopLevelSHELL.png, id=223, 566.86781pt x 642.14906pt>
 File: Fase1TopLevelSHELL.png Graphic file (type png)
 <use Fase1TopLevelSHELL.png>
 Package pdftex.def Info: Fase1TopLevelSHELL.png  used on input line 279.
@@ -843,97 +848,122 @@ l.283
                                                   \__shipout_drop_firstpage_...
 l.284 \newpage
                <./Fase1TopLevelSHELL.png>]
-<Fase2FSM.png, id=237, 674.52pt x 392.21532pt>
+<Fase2FSM.png, id=239, 674.52pt x 392.21532pt>
 File: Fase2FSM.png Graphic file (type png)
 <use Fase2FSM.png>
 Package pdftex.def Info: Fase2FSM.png  used on input line 295.
 (pdftex.def)             Requested size: 284.52756pt x 165.44746pt.
-<SelFSM.png, id=238, 328.97906pt x 617.30624pt>
-File: SelFSM.png Graphic file (type png)
-<use SelFSM.png>
-Package pdftex.def Info: SelFSM.png  used on input line 308.
-(pdftex.def)             Requested size: 284.52756pt x 533.90604pt.
+<FSM2.png, id=240, 1078.0275pt x 435.12563pt>
+File: FSM2.png Graphic file (type png)
+<use FSM2.png>
+Package pdftex.def Info: FSM2.png  used on input line 302.
+(pdftex.def)             Requested size: 345.0pt x 139.24968pt.
  [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312 
+l.306 
        <./Fase2FSM.png>]
-Overfull \vbox (7.85pt too high) has occurred while \output is active []
-
+<FSMSel.png, id=249, 568.37344pt x 306.39468pt>
+File: FSMSel.png Graphic file (type png)
+<use FSMSel.png>
+Package pdftex.def Info: FSMSel.png  used on input line 315.
+(pdftex.def)             Requested size: 284.52756pt x 153.38864pt.
+<SelFSM.png, id=250, 328.97906pt x 617.30624pt>
+File: SelFSM.png Graphic file (type png)
+<use SelFSM.png>
+Package pdftex.def Info: SelFSM.png  used on input line 322.
+(pdftex.def)             Requested size: 284.52756pt x 533.90604pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.312 
-       <./SelFSM.png>]
-<Debounce.png, id=251, 599.23875pt x 667.74469pt>
-File: Debounce.png Graphic file (type png)
-<use Debounce.png>
-Package pdftex.def Info: Debounce.png  used on input line 321.
-(pdftex.def)             Requested size: 284.52756pt x 317.05975pt.
- [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-14}) has been already used, duplicate ignored
+l.326 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+3.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.326 \newpage
-               <./Debounce.png>]
-<DisplayFase2.png, id=258, 527.72156pt x 670.00313pt>
-File: DisplayFase2.png Graphic file (type png)
-<use DisplayFase2.png>
-Package pdftex.def Info: DisplayFase2.png  used on input line 334.
-(pdftex.def)             Requested size: 284.52756pt x 361.23401pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+l.326 
+       <./FSM2.png> <./FSMSel.png>]
+Overfull \vbox (7.85pt too high) has occurred while \output is active []
+
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.338 \newpage
-               <./DisplayFase2.png>]
-<signalsf2.png, id=267, 232.61906pt x 64.74188pt>
-File: signalsf2.png Graphic file (type png)
-<use signalsf2.png>
-Package pdftex.def Info: signalsf2.png  used on input line 350.
-(pdftex.def)             Requested size: 142.26378pt x 39.59521pt.
-<TopLevelF2.png, id=268, 548.0475pt x 328.97906pt>
-File: TopLevelF2.png Graphic file (type png)
-<use TopLevelF2.png>
-Package pdftex.def Info: TopLevelF2.png  used on input line 357.
-(pdftex.def)             Requested size: 284.52756pt x 170.79903pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+l.326 
+       <./SelFSM.png>]
+<Debounce.png, id=264, 599.23875pt x 667.74469pt>
+File: Debounce.png Graphic file (type png)
+<use Debounce.png>
+Package pdftex.def Info: Debounce.png  used on input line 335.
+(pdftex.def)             Requested size: 284.52756pt x 317.05975pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 16}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.362 \chapter
-              {Validação}pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.3.17}) has been already used, duplicate ignored
+l.340 \newpage
+               <./Debounce.png>]
+<DisplayFase2.png, id=272, 527.72156pt x 670.00313pt>
+File: DisplayFase2.png Graphic file (type png)
+<use DisplayFase2.png>
+Package pdftex.def Info: DisplayFase2.png  used on input line 348.
+(pdftex.def)             Requested size: 284.52756pt x 361.23401pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+17}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.362 \chapter
+l.352 \newpage
+               <./DisplayFase2.png>]
+<signalsf2.png, id=280, 232.61906pt x 64.74188pt>
+File: signalsf2.png Graphic file (type png)
+<use signalsf2.png>
+Package pdftex.def Info: signalsf2.png  used on input line 364.
+(pdftex.def)             Requested size: 142.26378pt x 39.59521pt.
+<TopLevelF2.png, id=281, 548.0475pt x 328.97906pt>
+File: TopLevelF2.png Graphic file (type png)
+<use TopLevelF2.png>
+Package pdftex.def Info: TopLevelF2.png  used on input line 371.
+(pdftex.def)             Requested size: 284.52756pt x 170.79903pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+18}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.376 \chapter
+              {Validação}pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.3.19}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.376 \chapter
               {Validação} <./signalsf2.png> <./TopLevelF2.png>]
 Cap\'{\i }tulo 4.
-[18
+[19
 
 ]
 Cap\'{\i }tulo 5.
 
-Overfull \hbox (5.43472pt too wide) in paragraph at lines 370--371
+Overfull \hbox (5.43472pt too wide) in paragraph at lines 384--385
 []\T1/cmr/m/n/10 Passados os qua-tro se-gun-dos, nos \T1/cmr/m/it/10 dis-plays\
 T1/cmr/m/n/10 , apa-re-cer� a men-sa-gem "EPRO"que
  []
 
-[19
+[20
 
 ]
 Cap\'{\i }tulo 6.
-[20
+[21
 
-] [21
+]
+Package acronym Info: Label `acro:miect' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 411.
+ [22
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 416.
+LaTeX Warning: Empty bibliography on input line 427.
 
-[22
+[23
 
 ] (projfinalLSD.aux)
 
@@ -951,10 +981,10 @@ Package logreq Info: Writing requests to 'projfinalLSD.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17595 strings out of 478864
- 299095 string characters out of 2848660
- 1051530 words of memory out of 3000000
- 35217 multiletter control sequences out of 15000+600000
+ 17627 strings out of 478864
+ 299499 string characters out of 2848660
+ 1051722 words of memory out of 3000000
+ 35241 multiletter control sequences out of 15000+600000
  416372 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,6n,66p,1056b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -973,9 +1003,9 @@ AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\
 rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\
 Users\rafae\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk
 >
-Output written on projfinalLSD.pdf (25 pages, 649031 bytes).
+Output written on projfinalLSD.pdf (26 pages, 683991 bytes).
 PDF statistics:
- 737 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

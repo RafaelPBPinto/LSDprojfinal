@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/LSD/ProjFinal/LSDprojfinal/Fase_1/simulation/qsim
 Efase1
-Z1 w1623260030
+Z1 w1624027009
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
 Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -23,13 +23,13 @@ Z10 8ProjFinalFase1.vho
 Z11 FProjFinalFase1.vho
 l0
 L79
-VJidm?:2fI6;QjLAI2Kkg53
-!s100 RTSP67a`<K;5`hH]>`[Ve2
+VEck15Y6[L:4hfOkh0?M[62
+!s100 ;4>SVVjGbJjWD5V<EVT<]2
 Z12 OV;C;10.5b;63
 32
-Z13 !s110 1623260036
+Z13 !s110 1624027011
 !i10b 1
-Z14 !s108 1623260035.000000
+Z14 !s108 1624027011.000000
 Z15 !s90 -work|work|ProjFinalFase1.vho|
 Z16 !s107 ProjFinalFase1.vho|
 !i113 1
@@ -44,11 +44,11 @@ R6
 R7
 R8
 R9
-DEx4 work 5 fase1 0 22 Jidm?:2fI6;QjLAI2Kkg53
-l446
-L173
-VB=TT9CA3b4j5[Dmg<Ne2m2
-!s100 0EbBIENYf5I0J9aOV=3XM2
+DEx4 work 5 fase1 0 22 Eck15Y6[L:4hfOkh0?M[62
+l547
+L174
+V7XIzD6TVF00[Zh0hMC8i=2
+!s100 N>TS:m@oPUlZYZfG]=7NC2
 R12
 32
 R13
@@ -60,12 +60,12 @@ R16
 R17
 R18
 Efase1_vhd_vec_tst
-Z19 w1623260028
+Z19 w1624027008
 R7
 R8
 R0
-Z20 8TEST1.vwf.vht
-Z21 FTEST1.vwf.vht
+Z20 8Test1.vwf.vht
+Z21 FTest1.vwf.vht
 l0
 L31
 VVFgP;2;8[UHTlb?Ui3PfK2
@@ -74,27 +74,27 @@ R12
 32
 R13
 !i10b 1
-Z22 !s108 1623260036.000000
-Z23 !s90 -work|work|TEST1.vwf.vht|
-Z24 !s107 TEST1.vwf.vht|
+R14
+Z22 !s90 -work|work|Test1.vwf.vht|
+Z23 !s107 Test1.vwf.vht|
 !i113 1
 R17
 R18
 Afase1_arch
 R7
 R8
-DEx4 work 17 fase1_vhd_vec_tst 0 22 VFgP;2;8[UHTlb?Ui3PfK2
+Z24 DEx4 work 17 fase1_vhd_vec_tst 0 22 VFgP;2;8[UHTlb?Ui3PfK2
 l58
 L33
-Vgi97h3KCVU[4XidHbge6<1
-!s100 kAEIIo^Y9:M4cW@?R?EmE2
+VD:l[M^Ze0_4c2F=@8M1F`2
+!s100 2ZQk><HQmEanRHQG?n<jZ2
 R12
 32
 R13
 !i10b 1
+R14
 R22
 R23
-R24
 !i113 1
 R17
 R18
