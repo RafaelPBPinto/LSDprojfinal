@@ -1,0 +1,70 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Fase2FSM_tb is
+end Fase2FSM_tb;
+
+architecture v1 of Fase2FSM_tb is
+
+	signal s_reset : std_logic;
+	signal s_clk	: std_logic;
+	signal s_timeEXp : std_logic;
+	signal s_B1			: std_logic;
+	signal s_B2			: std_logic;
+	signal s_B3			: std_logic;
+	signal s_en_MEG		: std_logic;
+	
+	
+	signal s_entimer	: std_logic;
+	signal s_timeval	: std_logic_vector(7 downto 0);
+	signal s_ola		: std_logic;
+	signal s_epro		: std_logic;
+	signal s_ledr		: std_logic;
+	signal s_ledg		: std_logic;
+	
+
+begin 
+
+uut:	entity work.Fase2FSM(v1)
+			port map(reset => s_reset,
+						clk	=> s_clk,
+						enable_timer	=> s_entimer,
+						timeVal	=> s_timeval,
+						timeExp	=> s_timeEXp,
+						ola		=> s_ola,
+						epro		=> s_epro,
+						B1			=> s_B1,
+						B2			=> s_B2,
+						B3			=> s_B3,
+						en_MEG	=> s_en_MEG,
+						ledr		=> s_ledr,
+						ledg		=> s_ledg);
+						
+
+process
+begin
+	
+	wait for 6000 ns;
+	s_B1 <= '1';
+	wait for 6000 ns;
+	s_timeEXp <= '1';
+	wait for 2000 ns;
+	s_B1 <= '0';
+	wait for 2000 ns;
+	s_B2 <= '1';
+	s_en_MEG <= '1';
+	wait for 6000 ns;
+	s_en_MEG <= '0';
+	s_timeEXp <= '1';
+	wait for 2000 ns;
+	s_B2 <= '0'
+	wait for 2000 ns;
+	s_B3 <= '1';
+	wait for 6000 ns;
+	s_timeEXp <= '1';
+	wait for 2000 ns;
+	s_B3 <= '0';
+	wait for 100 ns;
+end process;
+	
+end v1;

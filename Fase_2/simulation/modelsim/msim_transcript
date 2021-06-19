@@ -1,0 +1,154 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Fase2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:44 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TimerFSM
+# -- Compiling architecture Behavioral of TimerFSM
+# End time: 22:23:44 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:44 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fase2FSM
+# -- Compiling architecture v1 of Fase2FSM
+# End time: 22:23:44 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:44 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Sel_Tam_Garrafa_FSM
+# -- Compiling architecture v1 of Sel_Tam_Garrafa_FSM
+# End time: 22:23:44 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:45 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DebounceUnit
+# -- Compiling architecture Behavioral of DebounceUnit
+# End time: 22:23:45 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:45 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Display_Tam_Garrafa
+# -- Compiling architecture v1 of Display_Tam_Garrafa
+# End time: 22:23:45 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:23:45 on Jun 18,2021
+# vcom -reportprogress 300 -93 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Fase2
+# -- Compiling architecture shell of Fase2
+# ** Error: (vcom-11) Could not find work.clkdividern.
+# ** Error (suppressible): C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(38): (vcom-1195) Cannot find expanded name "work.ClkDividerN".
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(38): Unknown expanded name.
+# ** Error: (vcom-11) Could not find work.display.
+# ** Error (suppressible): C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(43): (vcom-1195) Cannot find expanded name "work.Display".
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(43): Unknown expanded name.
+# -- Loading entity TimerFSM
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(57): (vcom-1436) Actual expression (prefix expression) of formal "reset" is not globally static.
+# -- Loading entity Fase2FSM
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(64): (vcom-1436) Actual expression (prefix expression) of formal "reset" is not globally static.
+# -- Loading entity Display_Tam_Garrafa
+# -- Loading entity Sel_Tam_Garrafa_FSM
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(90): (vcom-1436) Actual expression (prefix expression) of formal "reset" is not globally static.
+# -- Loading entity DebounceUnit
+# ** Error: C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd(112): VHDL Compiler exiting
+# End time: 22:23:45 on Jun 18,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 0
+# ** Error: C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./Fase2_run_msim_rtl_vhdl.do line 13
+# C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd}"
+vcom -reportprogress 300 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:24:14 on Jun 18,2021
+# vcom -reportprogress 300 -work work C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Fase2FSM_tb
+# -- Compiling architecture v1 of Fase2FSM_tb
+# -- Loading package NUMERIC_STD
+# -- Loading entity Fase2FSM
+# End time: 22:24:15 on Jun 18,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.fase2fsm_tb(v1)
+# vsim work.fase2fsm_tb(v1) 
+# Start time: 22:24:31 on Jun 18,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fase2fsm_tb(v1)
+# Loading work.fase2fsm(v1)
+run
+add wave -position end  sim:/fase2fsm_tb/uut/LEDR_TIME
+add wave -position end  sim:/fase2fsm_tb/uut/reset
+add wave -position end  sim:/fase2fsm_tb/uut/clk
+add wave -position end  sim:/fase2fsm_tb/uut/enable_timer
+add wave -position end  sim:/fase2fsm_tb/uut/timeVal
+add wave -position end  sim:/fase2fsm_tb/uut/timeExp
+add wave -position end  sim:/fase2fsm_tb/uut/ola
+add wave -position end  sim:/fase2fsm_tb/uut/epro
+add wave -position end  sim:/fase2fsm_tb/uut/B1
+add wave -position end  sim:/fase2fsm_tb/uut/B2
+add wave -position end  sim:/fase2fsm_tb/uut/B3
+add wave -position end  sim:/fase2fsm_tb/uut/B3
+add wave -position end  sim:/fase2fsm_tb/uut/en_MEG
+add wave -position end  sim:/fase2fsm_tb/uut/ledr
+add wave -position end  sim:/fase2fsm_tb/uut/ledg
+add wave -position end  sim:/fase2fsm_tb/uut/s_state
+add wave -position end  sim:/fase2fsm_tb/uut/OLA_TIME
+run
+run
+run
+run
+run -all
+run
+run -all
+# WARNING: No extended dataflow license exists
+# Break key hit
+# Break in Process line__45 at C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd line 65
+# End time: 22:28:44 on Jun 18,2021, Elapsed time: 0:04:13
+# Errors: 0, Warnings: 1

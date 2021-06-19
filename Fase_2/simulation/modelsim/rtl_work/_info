@@ -1,0 +1,274 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/LSD/ProjFinal/LSDprojfinal/Fase_2/simulation/modelsim
+Edebounceunit
+Z1 w1623680662
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd
+Z6 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd
+l0
+L5
+VgHK[fX_44kCXFcGM]Db092
+!s100 Cg<VSR:RhQRLYFdR<K]c]3
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1624051425
+!i10b 1
+Z9 !s108 1624051425.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd|
+Z11 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/DebounceUnit.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 debounceunit 0 22 gHK[fX_44kCXFcGM]Db092
+l23
+L15
+VbGWBK2]=cTnU3N4NdJKi:2
+!s100 RSdLcgKmL[]:O8ck9dCoI3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edisplay_tam_garrafa
+Z14 w1623927055
+R3
+R4
+R0
+Z15 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd
+Z16 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd
+l0
+L4
+VOAmI2z<?0[NjTbh7ZJXlh0
+!s100 6dz20eKVc9N:`I:LmAU5<1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd|
+Z18 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Display_Tam_Garrafa.vhd|
+!i113 1
+R12
+R13
+Av1
+R3
+R4
+DEx4 work 19 display_tam_garrafa 0 22 OAmI2z<?0[NjTbh7ZJXlh0
+l32
+L16
+VGRa4Je[@bZkDd?WIUGFk?3
+!s100 @02RR[mR_cbOQ^;VZZ`PR3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Efase2
+w1623835709
+R2
+R3
+R4
+R0
+8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd
+FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd
+l0
+L5
+VLM261ElGL5k^bA>8mF`f]1
+!s100 k4@F:2E7m1f69KBNR;^Tm1
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd|
+!s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2.vhd|
+!i113 1
+R12
+R13
+Efase2fsm
+Z19 w1623835620
+R2
+R3
+R4
+R0
+Z20 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd
+Z21 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd
+l0
+L5
+V;0zeKl<L30Mfkz=jVGJKh2
+!s100 <mBO@Go7mJIIYzag]l1zk2
+R7
+31
+Z22 !s110 1624051424
+!i10b 1
+Z23 !s108 1624051424.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd|
+Z25 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM.vhd|
+!i113 1
+R12
+R13
+Av1
+R2
+R3
+R4
+Z26 DEx4 work 8 fase2fsm 0 22 ;0zeKl<L30Mfkz=jVGJKh2
+l29
+L22
+V8YNQ7DOGN^RP]aIjO@IS41
+!s100 5G6H9lZ^BQkeO1PBW47`z0
+R7
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Efase2fsm_tb
+Z27 w1624050670
+R3
+R4
+R0
+Z28 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd
+Z29 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd
+l0
+L4
+VQbZFP9F62D3`nQBCiLYYk0
+!s100 D?d9KLHbQ9XdiAQLX[UJ`2
+R7
+32
+!s110 1624051454
+!i10b 1
+Z30 !s108 1624051454.000000
+Z31 !s90 -reportprogress|300|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd|
+Z32 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Fase2FSM_tb.vhd|
+!i113 1
+Z33 o-work work
+R13
+Av1
+R2
+R26
+R3
+R4
+DEx4 work 11 fase2fsm_tb 0 22 QbZFP9F62D3`nQBCiLYYk0
+l26
+L7
+V==RW>K8::40T_L5f8YcSC0
+!s100 _I@k8^8IIOf2QkQN`IZCd3
+R7
+32
+!s110 1624051455
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R33
+R13
+Esel_tam_garrafa_fsm
+Z34 w1623939629
+R3
+R4
+R0
+Z35 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd
+Z36 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd
+l0
+L4
+V4U@GeYDmE]If6M]W1fJUH3
+!s100 YB13]fo?mOEPHg2B`YT;01
+R7
+31
+R22
+!i10b 1
+R23
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd|
+Z38 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/Sel_Tam_Garrafa_FSM.vhd|
+!i113 1
+R12
+R13
+Av1
+R3
+R4
+DEx4 work 19 sel_tam_garrafa_fsm 0 22 4U@GeYDmE]If6M]W1fJUH3
+l19
+L15
+VFnRNlY:>Fh=lhMI=CYC:O1
+!s100 F_9KHXNU`OYDYfNH3DnSA2
+R7
+31
+R22
+!i10b 1
+R23
+R37
+R38
+!i113 1
+R12
+R13
+Etimerfsm
+Z39 w1623686754
+R2
+R3
+R4
+R0
+Z40 8C:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd
+Z41 FC:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd
+l0
+L5
+V:f^>_QLmldlZKejnYdlP51
+!s100 Qk_ID>jGD3FEB8nLG5oaz2
+R7
+31
+R22
+!i10b 1
+R23
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd|
+Z43 !s107 C:/LSD/ProjFinal/LSDprojfinal/Fase_2/TimerFSM.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 timerfsm 0 22 :f^>_QLmldlZKejnYdlP51
+l18
+L13
+V9ZNPhY7O_XzF;TL3Q;a2m0
+!s100 VX5UH631mP?EUF?Y4_TRn0
+R7
+31
+R22
+!i10b 1
+R23
+R42
+R43
+!i113 1
+R12
+R13
